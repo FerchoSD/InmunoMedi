@@ -1,8 +1,8 @@
 ---
 deployment:
   tasks:
-    # Ruta de implementación en el servidor
-    - export DEPLOYPATH=/home/inmunovi/repositories/InmunoMedi/
+    # Ruta de implementación en el servidor (directorio público)
+    - export DEPLOYPATH=/home2/inmunovi/public_html/InmunoMedi/
     
     # Copiar todos los archivos HTML
     - /bin/cp *.html $DEPLOYPATH
