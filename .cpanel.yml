@@ -1,0 +1,10 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/tu_usuario/public_html/
+    - /bin/cp *.html $DEPLOYPATH
+    - /bin/cp -R recursos $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R template $DEPLOYPATH
+    - /bin/cp submit-form.php $DEPLOYPATH
