@@ -1,21 +1,21 @@
----
-deployment:
-  tasks:
-    # Ruta de implementación en el servidor (directorio público)
-    - export DEPLOYPATH=/home2/inmunovi/public_html/InmunoMedi/
-    
-    # Copiar todos los archivos HTML
-    - /bin/cp *.html $DEPLOYPATH
-    
-    # Copiar archivos CSS y JavaScript
-    - /bin/cp *.css $DEPLOYPATH
-    - /bin/cp *.js $DEPLOYPATH
-    
-    # Copiar archivos PHP
-    - /bin/cp *.php $DEPLOYPATH
-    
-    # Copiar directorios necesarios
-    - /bin/cp -r recursos $DEPLOYPATH
-    
-    # Establecer permisos adecuados
-    - /bin/chmod -R 755 $DEPLOYPATH
+  ---
+  deployment:
+    tasks:
+      # Ruta de implementación en el servidor (directorio público)
+      - export DEPLOYPATH=/home2/inmunovi/public_html/InmunoMedi/
+      
+      # Copiar todos los archivos HTML
+      - /bin/cp *.html $DEPLOYPATH
+      
+      # Copiar archivos CSS y JavaScript
+      - /bin/cp *.css $DEPLOYPATH
+      - /bin/cp *.js $DEPLOYPATH
+      
+      # Copiar archivos PHP
+      - /bin/cp *.php $DEPLOYPATH
+      
+      # Copiar directorios necesarios
+      - /bin/cp -r recursos $DEPLOYPATH
+      
+      # Establecer permisos adecuados
+      - /bin/chmod -R 755 $DEPLOYPATH
