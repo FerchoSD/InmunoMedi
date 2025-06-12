@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MCPS5HTD');</script>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MCPS5HTD');</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Descubre la gama completa de productos InmunoMedi para fortalecer tu sistema inmune, mejorar tu digestión y potenciar tu bienestar general. Factor de Transferencia, probióticos, vitaminas y más.">
-  <meta name="keywords" content="productos InmunoMedi, Factor de Transferencia, suplementos, salud, bienestar, inmunidad, probióticos, vitaminas, omega-3, antienvejecimiento, Celestin FT, Null Age, Artikom, Daily Pro, DK Fort, L Ferrín, Inm Mix, Inm Box">
+  <meta name="description"
+    content="Descubre la gama completa de productos InmunoMedi para fortalecer tu sistema inmune, mejorar tu digestión y potenciar tu bienestar general. Factor de Transferencia, probióticos, vitaminas y más.">
+  <meta name="keywords"
+    content="productos InmunoMedi, Factor de Transferencia, suplementos, salud, bienestar, inmunidad, probióticos, vitaminas, omega-3, antienvejecimiento, Celestin FT, Null Age, Artikom, Daily Pro, DK Fort, L Ferrín, Inm Mix, Inm Box">
   <meta property="og:title" content="Productos InmunoMedi - Fortalece tu Salud">
-  <meta property="og:description" content="Explora nuestra selección de suplementos premium diseñados para optimizar tu sistema inmune y bienestar integral.">
+  <meta property="og:description"
+    content="Explora nuestra selección de suplementos premium diseñados para optimizar tu sistema inmune y bienestar integral.">
   <meta property="og:image" content="recursos/simbolo/SimbFCT.png">
   <meta property="og:url" content="https://inmunovital.com/productos.html">
   <meta name="theme-color" content="#2E5A87">
@@ -21,23 +28,31 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="icon" href="recursos/simbolo/SimbFCT.png" type="image/png">
   <link rel="apple-touch-icon" href="recursos/simbolo/SimbFCT.png">
-
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
   <style>
     /* Estilos globales para el fondo rosa */
     body {
-      background-color: #FFCFFA; /* Color rosa pastel */
+      background-color: #FFCFFA;
+      /* Color rosa pastel */
       margin: 0;
       padding: 0;
-      overflow-x: hidden; /* Evitar scroll horizontal */
-      font-family: 'Montserrat', sans-serif; /* Fuente global */
+      overflow-x: hidden;
+      /* Evitar scroll horizontal */
+      font-family: 'Montserrat', sans-serif;
+      /* Fuente global */
     }
 
     /* Estilos para el Header */
     .main-header {
-      background-color: #056afa; /* El mismo azul de las letras */
+      background-color: #056afa;
+      /* El mismo azul de las letras */
       color: white;
       padding: 6px 30px;
       display: flex;
@@ -46,18 +61,22 @@
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
       position: sticky;
       top: 0;
-      z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
-      flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+      z-index: 1000;
+      /* Asegura que el header esté por encima de otros elementos */
+      flex-wrap: wrap;
+      /* Permite que los elementos se envuelvan en pantallas pequeñas */
     }
 
     .main-header .logo-container {
       display: flex;
       align-items: center;
-      flex-shrink: 0; /* Evita que el logo se encoja */
+      flex-shrink: 0;
+      /* Evita que el logo se encoja */
     }
 
     .main-header .logo-container img {
-      height: 60px; /* Ajusta el tamaño del logo al alto del header */
+      height: 60px;
+      /* Ajusta el tamaño del logo al alto del header */
       width: auto;
       object-fit: contain;
     }
@@ -68,8 +87,10 @@
       list-style: none;
       margin: 0;
       padding: 0;
-      flex-wrap: wrap; /* Permite que los enlaces se envuelvan */
-      justify-content: center; /* Centra los enlaces en pantallas pequeñas */
+      flex-wrap: wrap;
+      /* Permite que los enlaces se envuelvan */
+      justify-content: center;
+      /* Centra los enlaces en pantallas pequeñas */
     }
 
     .main-header .nav-links a {
@@ -111,26 +132,23 @@
       }
     }
 
-    /* Product Carousel Section Styles */
-    .product-carousel-section {
-      padding: 50px 0 80px; /* Adjusted padding */
+    /* Titulos de Seccion */
+    .section-header {
+      text-align: center;
+      margin-bottom: 70px;
       position: relative;
-      background-color: transparent;
-      overflow: hidden;
     }
 
-    .product-carousel-section .section-title {
+    .section-header h2 {
       font-size: 2.8rem;
       font-weight: 800;
       color: #056afa;
       margin-bottom: 20px;
       position: relative;
       display: inline-block;
-      text-align: center;
-      width: 100%;
     }
 
-    .product-carousel-section .section-title::after {
+    .section-header h2::after {
       content: '';
       position: absolute;
       bottom: -15px;
@@ -142,407 +160,668 @@
       border-radius: 4px;
     }
 
-    .product-carousel-section .section-subtitle {
-      text-align: center;
+    .section-header p {
       font-size: 1.2rem;
       color: #417ecd;
       max-width: 700px;
-      margin: 25px auto 50px;
+      margin: 25px auto 0;
       font-weight: 400;
       opacity: 0.9;
     }
 
-    /* Carousel Customization */
-    #productCarousel {
-      height: 700px; /* Increased height to accommodate content and recommendations */
-      background: transparent !important;
+    /* Estilos de la seccion de productos */
+    .product-carousel-section {
+      padding: 0;
+      /* Changed from 80px 0 to 0 */
+      position: relative;
+      /* Ensure it takes full width */
+      width: 100%;
+      box-sizing: border-box;
+      /* Include padding in the element's total width and height */
     }
 
+    /* Remove default container padding to allow full width */
+    .product-carousel-section .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    /* Estilos del carrusel de productos */
     #productCarousel .carousel-inner {
-      height: 100%;
+      overflow: visible;
+      /* Permitir que las sombras se vean */
     }
 
     #productCarousel .carousel-item {
-      height: 100%;
-      display: flex;
-      align-items: flex-start; /* Align to top */
-      justify-content: center;
-      padding-top: 40px; /* Push content down slightly from the top */
-      background: transparent !important;
+      padding: 20px 0;
     }
 
-    .product-carousel-slide-inner {
-      display: flex;
-      flex-direction: row; /* Default to row for larger screens */
-      width: 100%;
-      max-width: 1400px;
+    .product-slide-container {
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 30px;
+      padding: 40px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      transition: all 0.4s ease;
+      /* Changed max-width from 1400px to 1600px */
+      max-width: 1600px;
+      /* Adjust as needed */
       margin: 0 auto;
-      height: 100%;
-      position: relative;
-      gap: 50px; /* Increased gap between image and text */
-      background: transparent !important;
-      box-shadow: none !important;
-      backdrop-filter: none !important;
-      -webkit-backdrop-filter: none !important;
-      overflow: hidden; /* Ensure content respects boundaries */
+      /* Center the container */
     }
 
-    @media (max-width: 991.98px) { /* Adjust for smaller screens */
-      .product-carousel-slide-inner {
-        flex-direction: column; /* Stack image and text vertically */
-        align-items: center;
-        text-align: center;
-        padding-top: 20px;
-        height: auto; /* Allow height to adjust */
-      }
-      #productCarousel {
-        height: auto; /* Allow carousel height to adjust on smaller screens */
-      }
-      #productCarousel .carousel-item {
-         padding-bottom: 50px; /* Add space at bottom for stacked content */
+    @media (max-width: 991.98px) {
+      .product-slide-container {
+        padding: 20px;
       }
     }
 
-    .product-image-col,
-    .product-text-col {
-      position: relative;
-      z-index: 2;
-      background: transparent !important;
+    .product-main-content {
       display: flex;
-      flex-direction: column;
-      align-items: center; /* Center horizontally for image col */
-      justify-content: flex-start; /* Align to top */
+      gap: 40px;
     }
 
-    .product-image-col {
-      flex: 0 0 45%; /* Fixed width for image */
-      max-width: 45%;
-      height: 100%; /* Take full height of slide-inner */
+    @media (max-width: 991.98px) {
+      .product-main-content {
+        flex-direction: column;
+      }
     }
 
-    .product-text-col {
-      flex: 1; /* Take remaining space */
-      text-align: left; /* Align text to left */
-      padding-right: 20px; /* Padding for text content */
-      justify-content: flex-start; /* Align content to top */
+    .product-image-section {
+      flex: 0 0 40%;
+      position: relative;
     }
-     @media (max-width: 991.98px) {
-        .product-image-col, .product-text-col {
-            flex: 0 0 auto; /* Auto height/width */
-            max-width: 100%; /* Full width */
-            padding-right: 0;
-        }
-        .product-image-col {
-            height: 300px; /* Fixed height for image on mobile */
-        }
-        .product-text-col {
-            padding: 0 20px; /* Horizontal padding for text */
-            text-align: center; /* Center text on mobile */
-        }
-    }
-
 
     .product-image-container {
-      width: 90%; /* Adjusted width relative to its column */
-      height: 90%; /* Adjusted height relative to its column */
-      background: transparent !important;
-      backdrop-filter: none !important;
-      -webkit-backdrop-filter: none !important;
-      border-radius: 30px; /* Apply rounded corners */
-      overflow: hidden; /* Ensure content respects rounded corners */
-      position: relative;
-      box-shadow: none;
-      transition: all 0.5s ease;
+      background: rgb(255, 255, 255);
+      border-radius: 40px;
+      /* Apply border-radius here */
+      padding: 0px;
+      /* Changed padding to 0px to allow image to fill entirely */
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       display: flex;
       align-items: center;
       justify-content: center;
+      height: 600px;
+      transition: transform 0.3s ease;
+      overflow: hidden;
+      /* Ensure content respects border-radius */
+    }
+
+    .product-image-container:hover {
+      transform: scale(1.03);
     }
 
     .product-carousel-image {
       width: 100%;
       height: 100%;
-      object-fit: contain; /* Ensure image fits well */
-      filter: drop-shadow(0 10px 25px rgba(0,0,0,0.15));
-      z-index: 999 !important;
-      position: relative;
-      border-radius: 30px;
-      opacity: 0;
-      transform: scale(0.8);
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      object-fit: cover;
+      /* Ensures the image covers the entire container while maintaining aspect ratio */
+      border-radius: 40px;
+      /* Apply border-radius to the image as well, matching its container */
+      filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
     }
 
-    .product-text-content-wrapper {
-        width: 100%;
-        padding: 20px 0; /* Reduced padding here, as text-col has padding */
-        background: transparent !important;
-        border-radius: 30px;
-        box-shadow: none !important;
-        backdrop-filter: none !important;
-        -webkit-backdrop-filter: none !important;
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: flex-start; /* Align content to top */
+    .product-info-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
     }
 
-    .product-text-content-wrapper h3 {
-      font-size: 2.2rem; /* Larger product title */
-      font-weight: 800;
-      color: #056afa;
+    .product-info-section .product-title-container {
+      display: flex;
+      justify-content: center;
+      /* Center the title block */
       margin-bottom: 15px;
+      /* Adjust spacing as needed */
+      text-align: center;
+      /* Ensure text inside is centered */
+      position: relative;
+      /* For the underline effect */
+      padding-bottom: 20px;
+      /* Space for the underline */
+    }
+
+    .product-info-section .product-title-container h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: min(2.5rem, 6vw);
+      /* Responsive font size */
+      font-weight: 900;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
       position: relative;
       display: inline-block;
-      line-height: 1.2;
+      /* Allows underline to be relative to text width */
+      text-shadow: 0 3px 15px rgba(5, 106, 250, 0.2);
+      /* Base shadow for blue text */
+
+      background: linear-gradient(135deg, #056afa 20%, #417ecd 50%, #056afa 80%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      /* Makes the gradient visible through text */
     }
 
-    .product-text-content-wrapper h3::after {
+    /* Style for the pink part of the title */
+    .product-info-section .product-title-container h3 span.pink-part {
+      background: none;
+      /* Remove background-clip for this part */
+      color: #FF80AA !important;
+      /* Apply the vibrant pink color directly */
+      text-shadow: 0 3px 15px rgba(255, 128, 170, 0.4);
+      /* Adjust shadow for pink text */
+      display: inline;
+      /* Keep it inline with the rest of the title */
+    }
+
+    /* Style for the animated underline */
+    .product-info-section .product-title-container h3::after {
       content: '';
       position: absolute;
-      bottom: -8px;
-      left: 0;
-      width: 60px;
-      height: 3px;
-      background: linear-gradient(to right, #FF80AA, #d3b2c2);
-      border-radius: 2px;
-    }
-     @media (max-width: 991.98px) {
-        .product-text-content-wrapper h3::after {
-            left: 50%;
-            transform: translateX(-50%);
-        }
+      bottom: -10px;
+      /* Position below the text */
+      left: 50%;
+      transform: translateX(-50%);
+      /* Center it */
+      width: 80%;
+      /* Adjust width relative to title */
+      max-width: 150px;
+      /* Max width for underline */
+      height: 4px;
+      background: linear-gradient(90deg, #056afa, #ffcffa);
+      /* Gradient underline */
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 1px 6px rgba(5, 106, 250, 0.2);
+      animation: shimmer-underline 2s infinite ease-in-out;
+      /* Add shimmer animation */
     }
 
+    @keyframes shimmer-underline {
+      0% {
+        transform: translateX(-50%) scaleX(0);
+        opacity: 0.5;
+      }
 
-    .product-text-content-wrapper .product-description {
-      font-size: 1.05rem;
+      50% {
+        transform: translateX(-50%) scaleX(1);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateX(-50%) scaleX(0);
+        opacity: 0.5;
+      }
+    }
+
+    .product-info-section .product-description {
+      font-size: 1.1rem;
       line-height: 1.7;
+      color: #417ecd;
       font-weight: 500;
-      color: #056afa;
-      margin-bottom: 15px;
-      text-align: left;
+      margin-bottom: 20px;
     }
 
-    .product-text-content-wrapper .product-description ul {
-      list-style: disc;
-      padding-left: 20px;
-      margin-top: 10px;
-      color: #3466c9;
+    /* Product Meta (Category, Availability) */
+    .product-meta {
+      margin-bottom: 10px;
       font-size: 0.95rem;
-    }
-    .product-text-content-wrapper .product-description ul li {
-        margin-bottom: 5px;
+      color: #417ecd;
     }
 
-    .product-text-content-wrapper .product-details {
-      width: 100%;
-      text-align: left;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-    .product-text-content-wrapper .product-details ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    .product-text-content-wrapper .product-details ul li {
-        font-size: 1rem;
-        color: #3466c9;
-        margin-bottom: 8px;
-        font-weight: 600;
+    .product-meta p {
+      margin-bottom: 5px;
     }
 
-    .product-text-content-wrapper .product-price {
-      font-size: 1.8rem;
-      font-weight: 800;
+    .product-meta strong {
+      color: #056afa;
+      /* Ensure category/availability labels are clear */
+    }
+
+    .product-meta .fa-check-circle {
+      color: #28a745;
+      /* Green checkmark */
+    }
+
+
+    .product-price {
+      font-size: 2rem;
+      font-weight: 700;
       color: #FF80AA;
-      margin-bottom: 20px;
-      text-align: left;
+      margin-bottom: 10px;
     }
-    .product-text-content-wrapper .product-price .wholesale-price {
-      font-size: 1.2rem;
+
+    .product-price .wholesale-price {
+      font-size: 1.1rem;
       font-weight: 600;
       color: #056afa;
       display: block;
       margin-top: 5px;
     }
 
-    /* Enhanced Add to Cart Button */
-    .btn-add-to-cart {
-        background: linear-gradient(135deg, #FF80AA 0%, #d3b2c2 100%) !important; /* Gradient background */
-        color: #056afa !important; /* Text blue */
-        box-shadow: 0 8px 25px rgba(255,128,170,0.5) !important; /* Stronger shadow */
-        display: inline-flex; /* Use flex for icon and text alignment */
-        align-items: center;
-        justify-content: center;
-        width: auto;
-        padding: 15px 40px; /* More generous padding */
-        text-decoration: none;
-        border-radius: 35px; /* More rounded */
-        font-weight: 700;
-        font-size: 1.15rem; /* Slightly larger font */
-        letter-spacing: 0.5px;
-        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother transition */
-        position: relative;
-        overflow: hidden; /* For ripple/shine effect */
-        z-index: 20;
-        border: none; /* Remove default button border */
-        cursor: pointer;
+    .product-actions {
+      display: flex;
+      flex-wrap: wrap;
+      /* Allow buttons to wrap on smaller screens */
+      gap: 15px;
+      margin-top: 20px;
+      align-items: center;
     }
 
-    .btn-add-to-cart i {
-        font-size: 1.5rem; /* Larger icon */
-        margin-right: 12px; /* More space for icon */
-        transition: transform 0.3s ease;
+    .quantity-control {
+      display: flex;
+      align-items: center;
+      border: 1px solid #056afa;
+      border-radius: 50px;
+      overflow: hidden;
+    }
+
+    .quantity-control button {
+      background: transparent;
+      border: none;
+      color: #056afa;
+      font-size: 1.2rem;
+      font-weight: 600;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .quantity-control button:hover {
+      background-color: rgba(5, 106, 250, 0.1);
+    }
+
+    .quantity-control input {
+      width: 50px;
+      text-align: center;
+      border: none;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #056afa;
+      background: transparent;
+    }
+
+    /* Hide number input arrows */
+    .quantity-control input::-webkit-outer-spin-button,
+    .quantity-control input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .quantity-control input[type=number] {
+      -moz-appearance: textfield;
+      appearance: textfield;
+    }
+
+    .btn-add-to-cart {
+      background: linear-gradient(135deg, #056afa, #417ecd);
+      color: white;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      border: none;
+      box-shadow: 0 8px 20px rgba(5, 106, 250, 0.3);
+      transition: all 0.3s ease;
     }
 
     .btn-add-to-cart:hover {
-        transform: translateY(-5px) scale(1.02) !important; /* More pronounced lift and slight scale */
-        box-shadow: 0 15px 35px rgba(255,128,170,0.7) !important; /* Even stronger shadow on hover */
-        background: linear-gradient(135deg, #ff99bf 0%, #e0c2d3 100%) !important; /* Slightly lighter gradient */
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(5, 106, 250, 0.4);
     }
 
-    .btn-add-to-cart:active {
-        transform: translateY(-2px) scale(0.98) !important; /* Slight push down on click */
-        box-shadow: 0 5px 15px rgba(255,128,170,0.3) !important;
+    .btn-add-to-cart i {
+      margin-right: 10px;
     }
 
-    /* Animation for click feedback */
-    .btn-add-to-cart.clicked {
-        animation: pulse-button 0.5s ease-out;
+    /* Style for Buy Now button */
+    .btn-buy-now {
+      background: linear-gradient(135deg, #FF80AA, #e75c87);
+      color: white;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      border: none;
+      box-shadow: 0 8px 20px rgba(255, 128, 170, 0.3);
+      transition: all 0.3s ease;
     }
 
-    @keyframes pulse-button {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.05); box-shadow: 0 10px 30px rgba(255,128,170,0.6); }
-        100% { transform: scale(1); }
+    .btn-buy-now:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(255, 128, 170, 0.4);
+    }
+
+    .btn-buy-now i {
+      margin-right: 10px;
+    }
+
+    /* Style for Wishlist button */
+    .btn-wishlist {
+      background: rgba(255, 255, 255, 0.2);
+      color: #056afa;
+      padding: 12px;
+      border-radius: 50%;
+      font-size: 1.1rem;
+      border: 1px solid rgba(5, 106, 250, 0.3);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+    }
+
+    .btn-wishlist:hover {
+      background-color: rgba(5, 106, 250, 0.1);
+      transform: scale(1.1);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Share options */
+    .share-options {
+      display: flex;
+      flex-wrap: wrap;
+      /* Allow icons to wrap if space is limited */
+      gap: 10px;
+      margin-top: 20px;
+      align-items: center;
+      font-size: 0.95rem;
+      color: #417ecd;
+      font-weight: 600;
+      padding-top: 15px;
+      /* Add some space from buttons */
+      border-top: 1px solid rgba(5, 106, 250, 0.1);
+      /* Separator line */
+    }
+
+    .share-options .share-label {
+      margin-right: 5px;
+    }
+
+    .share-options .share-icon {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: rgba(5, 106, 250, 0.1);
+      color: #056afa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .share-options .share-icon:hover {
+      background-color: rgba(5, 106, 250, 0.2);
+      transform: translateY(-2px);
+    }
+
+    /* Specific social media colors for better branding */
+    .share-options .share-icon.share-facebook {
+      background-color: #3b5998;
+      color: white;
+    }
+
+    .share-options .share-icon.share-facebook:hover {
+      background-color: #2d4373;
+    }
+
+    .share-options .share-icon.share-twitter {
+      background-color: #00acee;
+      color: white;
+    }
+
+    .share-options .share-icon.share-twitter:hover {
+      background-color: #008fcc;
+    }
+
+    .share-options .share-icon.share-whatsapp {
+      background-color: #25d366;
+      color: white;
+    }
+
+    .share-options .share-icon.share-whatsapp:hover {
+      background-color: #1da851;
+    }
+
+    .share-options .share-icon.share-email {
+      background-color: #dd4b39;
+      color: white;
+    }
+
+    .share-options .share-icon.share-email:hover {
+      background-color: #c23321;
+    }
+
+
+    /* Trust badges */
+    .trust-badges-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(5, 106, 250, 0.1);
+    }
+
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 10px 15px;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #056afa;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .trust-badge i {
+      color: #FF80AA;
+      /* Icon color from pink palette */
+      font-size: 1.1rem;
+    }
+
+    .trust-badge:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+
+    /* Tabs de Información Adicional */
+    .product-tabs-container {
+      margin-top: 50px;
+    }
+
+    .product-tabs-nav {
+      display: flex;
+      border-bottom: 2px solid rgba(5, 106, 250, 0.2);
+      margin-bottom: 30px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .product-tab-btn {
+      padding: 15px 25px;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      border-bottom: 4px solid transparent;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #417ecd;
+      transition: all 0.3s ease;
+      margin-bottom: -2px;
+      /* Alinea con el borde inferior */
+    }
+
+    .product-tab-btn.active {
+      color: #056afa;
+      border-bottom-color: #056afa;
+    }
+
+    .product-tab-btn:hover {
+      background-color: rgba(5, 106, 250, 0.05);
+      color: #056afa;
+    }
+
+    .product-tab-panel {
+      display: none;
+      animation: fadeIn 0.5s ease;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 30px;
+      border-radius: 15px;
+      color: #056afa;
+    }
+
+    .product-tab-panel.active {
+      display: block;
+    }
+
+    .product-tab-panel h4 {
+      font-weight: 700;
+      color: #056afa;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(5, 106, 250, 0.2);
+    }
+
+    .product-tab-panel ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .product-tab-panel ul li {
+      padding-left: 25px;
+      position: relative;
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .product-tab-panel ul li::before {
+      content: '\f058';
+      /* fas fa-check-circle */
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      color: #FF80AA;
+      position: absolute;
+      left: 0;
+      top: 2px;
+    }
+
+    /* FAQ (Acordeón) */
+    .faq-item {
+      background: white;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .faq-question {
+      padding: 20px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-question .toggle-icon {
+      transition: transform 0.3s ease;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+      padding: 0 20px;
+    }
+
+    .faq-answer p {
+      padding-bottom: 20px;
+      margin: 0;
+      line-height: 1.7;
+      color: #417ecd;
+    }
+
+    .faq-item.active .faq-question .toggle-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+      /* Adjust as needed */
     }
 
 
     /* Carousel navigation buttons */
-    .carousel-control-prev,
-    .carousel-control-next {
-      width: 5%;
+    #productCarousel .carousel-control-prev,
+    #productCarousel .carousel-control-next {
+      width: 45px;
+      height: 45px;
       opacity: 1;
-      background-color: rgba(5, 106, 250, 0.1);
+      background-color: rgba(255, 255, 255, 0.5);
       transition: all 0.3s ease;
-      border-radius: 10px;
-      margin: 0 10px;
+      border-radius: 50%;
       top: 50%;
       transform: translateY(-50%);
-      height: 80px; /* Larger hit area */
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      z-index: 10;
     }
 
-    .carousel-control-prev:hover,
-    .carousel-control-next:hover {
-      background-color: rgba(5, 106, 250, 0.2);
-      transform: translateY(-50%) scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    #productCarousel .carousel-control-prev {
+      left: -20px;
     }
 
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
+    #productCarousel .carousel-control-next {
+      right: -20px;
+    }
+
+    #productCarousel .carousel-control-prev:hover,
+    #productCarousel .carousel-control-next:hover {
+      background-color: white;
+      transform: translateY(-50%) scale(1.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    #productCarousel .carousel-control-prev-icon,
+    #productCarousel .carousel-control-next-icon {
       background-image: none;
-      font-family: "Font Awesome 5 Free";
+      font-family: "Font Awesome 6 Free";
       font-weight: 900;
       color: #056afa;
-      font-size: 1.8rem;
+      font-size: 1.2rem;
     }
 
-    .carousel-control-prev-icon::before {
-      content: "\f053"; /* fa-chevron-circle-left */
+    #productCarousel .carousel-control-prev-icon::before {
+      content: "\f053";
     }
 
-    .carousel-control-next-icon::before {
-      content: "\f054"; /* fa-chevron-circle-right */
+    #productCarousel .carousel-control-next-icon::before {
+      content: "\f054";
     }
 
-    /* Recommended Products Section Styles */
-    .recommended-products-section {
-      margin-top: 40px;
-      width: 100%;
-      text-align: center;
-      padding-top: 30px;
-      border-top: 1px dashed rgba(5, 106, 250, 0.2);
-      opacity: 0; /* Initial state for animation */
-      transform: translateY(30px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-    .carousel-item.active .recommended-products-section {
-        opacity: 1;
-        transform: translateY(0);
-        transition-delay: 0.7s; /* Delay after main content animates in */
-    }
+    @media (max-width: 767.98px) {
+      #productCarousel .carousel-control-prev {
+        left: 5px;
+      }
 
-
-    .recommended-products-section h4 {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: #FF80AA; /* Pink for recommendations title */
-      margin-bottom: 20px;
-      position: relative;
-      display: inline-block;
-    }
-    .recommended-products-section h4::after {
-        content: '';
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(to right, #FF80AA, #d3b2c2);
-        border-radius: 1px;
-    }
-
-    .recommended-products-grid {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    }
-
-    .recommended-product-card {
-      background: rgba(255, 255, 255, 0.7); /* Slightly transparent white */
-      border-radius: 15px;
-      padding: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-      width: 150px; /* Fixed width for small cards */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-    }
-
-    .recommended-product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    }
-
-    .recommended-product-card img {
-      max-width: 80px;
-      height: 80px;
-      object-fit: contain;
-      margin-bottom: 10px;
-      border-radius: 8px;
-      filter: drop-shadow(0 3px 8px rgba(0,0,0,0.1));
-    }
-
-    .recommended-product-card h5 {
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: #056afa;
-      margin-bottom: 5px;
-    }
-
-    .recommended-product-card p.price {
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: #FF80AA;
-      margin: 0;
+      #productCarousel .carousel-control-next {
+        right: 5px;
+      }
     }
 
 
@@ -553,208 +832,283 @@
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: -2; /* Asegurar que esté detrás de todo el contenido */
+      z-index: -2;
       pointer-events: none;
       overflow: hidden;
     }
 
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     @keyframes float-element {
-      0% { transform: translate(0, 0) scale(1); }
-      25% { transform: translate(10vw, 5vh) scale(1.05); }
-      50% { transform: translate(0, 10vh) scale(1); }
-      75% { transform: translate(-10vw, 5vh) scale(0.95); }
-      100% { transform: translate(0, 0) scale(1); }
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      25% {
+        transform: translate(10vw, 5vh) scale(1.05);
+      }
+
+      50% {
+        transform: translate(0, 10vh) scale(1);
+      }
+
+      75% {
+        transform: translate(-10vw, 5vh) scale(0.95);
+      }
+
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
     }
 
     @keyframes rotate-slow {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
     }
 
     @keyframes move-random {
-      0% { transform: translate(0, 0); }
-      20% { transform: translate(calc(var(--rand-val-1) * 40vw - 20vw), calc(var(--rand-val-2) * 40vh - 20vh)); }
-      40% { transform: translate(calc(var(--rand-val-3) * 40vw - 20vw), calc(var(--rand-val-4) * 40vh - 20vh)); }
-      60% { transform: translate(calc(var(--rand-val-5) * 40vw - 20vw), calc(var(--rand-val-6) * 40vh - 20vh)); }
-      80% { transform: translate(calc(var(--rand-val-7) * 40vw - 20vw), calc(var(--rand-val-8) * 40vh - 20vh)); }
-      100% { transform: translate(0, 0); }
+      0% {
+        transform: translate(0, 0);
+      }
+
+      20% {
+        transform: translate(calc(var(--rand-val-1) * 40vw - 20vw), calc(var(--rand-val-2) * 40vh - 20vh));
+      }
+
+      40% {
+        transform: translate(calc(var(--rand-val-3) * 40vw - 20vw), calc(var(--rand-val-4) * 40vh - 20vh));
+      }
+
+      60% {
+        transform: translate(calc(var(--rand-val-5) * 40vw - 20vw), calc(var(--rand-val-6) * 40vh - 20vh));
+      }
+
+      80% {
+        transform: translate(calc(var(--rand-val-7) * 40vw - 20vw), calc(var(--rand-val-8) * 40vh - 20vh));
+      }
+
+      100% {
+        transform: translate(0, 0);
+      }
     }
 
     /* Footer and floating buttons (re-using from index.html) */
     .footer-premium {
-        background: linear-gradient(135deg, #056afa 0%, #417ecd 100%);
-        color: white;
-        padding: 18px 0 8px;
-        position: relative;
-        margin-top: 80px;
-        overflow: hidden;
+      background: linear-gradient(135deg, #056afa 0%, #417ecd 100%);
+      color: white;
+      padding: 18px 0 8px;
+      position: relative;
+      margin-top: 80px;
+      overflow: hidden;
     }
+
     .footer-premium .footer-content {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
     }
+
     .footer-premium .footer-section h4 {
-        font-size: 1.3rem;
-        font-weight: 700;
-        margin-bottom: 15px;
-        color: #fff2df;
-        position: relative;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #fff2df;
+      position: relative;
     }
+
     .footer-premium .footer-section h4::after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        width: 50px;
-        height: 3px;
-        background: #fff2df;
-        border-radius: 2px;
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: #fff2df;
+      border-radius: 2px;
     }
+
     .footer-premium .footer-section ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
+
     .footer-premium .footer-section ul li {
-        margin-bottom: 10px;
+      margin-bottom: 10px;
     }
+
     .footer-premium .footer-section a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.05rem;
-        transition: color 0.3s ease;
+      color: white;
+      text-decoration: none;
+      font-size: 1.05rem;
+      transition: color 0.3s ease;
     }
+
     .footer-premium .footer-section a:hover {
-        color: #fff2df;
-        padding-left: 8px;
+      color: #fff2df;
+      padding-left: 8px;
     }
+
     .footer-premium .social-links a {
-        width: 45px;
-        height: 45px;
-        background: rgba(255,255,255,0.1);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        backdrop-filter: blur(5px);
+      width: 45px;
+      height: 45px;
+      background: rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
     }
+
     .footer-premium .social-links a:hover {
-        background: rgba(255,242,223,0.2);
-        transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      background: rgba(255, 242, 223, 0.2);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
+
     .footer-premium .social-links i {
-        font-size: 1.2rem;
-        color: white;
+      font-size: 1.2rem;
+      color: white;
     }
+
     .footer-premium .contact-item {
-        display: flex;
-        align-items: flex-start;
-        gap: 15px;
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
     }
+
     .footer-premium .contact-item div:first-child {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background: rgba(255,242,223,0.15);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 242, 223, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
     }
+
     .footer-premium .contact-item i {
-        color: #fff2df;
+      color: #fff2df;
     }
+
     .footer-premium .contact-item h5 {
-        font-size: 1.1rem;
-        margin-bottom: 5px;
-        font-weight: 600;
-        color: white;
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: white;
     }
+
     .footer-premium .contact-item p {
-        margin: 0;
-        line-height: 1.5;
-        color: white;
+      margin: 0;
+      line-height: 1.5;
+      color: white;
     }
+
     .footer-premium .footer-bottom {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        padding-top: 10px;
-        border-top: 1px solid rgba(255,255,255,0.1);
-        margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      margin-top: 30px;
     }
+
     .footer-premium .footer-bottom p {
-        color: rgba(255,255,255,0.8);
-        margin: 0;
-        font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin: 0;
+      font-size: 0.95rem;
     }
+
     .footer-premium .footer-bottom a {
-        color: rgba(255,255,255,0.8);
-        text-decoration: none;
-        font-size: 0.95rem;
-        transition: color 0.3s ease;
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
     }
+
     .footer-premium .footer-bottom a:hover {
-        color: #fff2df;
+      color: #fff2df;
     }
+
     /* WhatsApp Button */
     .whatsapp-btn {
-        position: fixed;
-        bottom: 25px;
-        right: 25px;
-        z-index: 1000;
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      z-index: 1000;
     }
+
     .whatsapp-btn a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60px;
-        height: 60px;
-        background-color: #25d366;
-        color: white;
-        border-radius: 50%;
-        font-size: 2.2rem;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-        transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      font-size: 2.2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      transition: all 0.3s ease;
     }
+
     .whatsapp-btn a:hover {
-        background-color: #1DA851;
-        transform: translateY(-3px);
-        box-shadow: 0 6px 15px rgba(0,0,0,0.35);
+      background-color: #1DA851;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
     }
+
     /* Back to Top Button */
     .back-to-top {
-        position: fixed;
-        bottom: 100px; /* Adjust to be above WhatsApp button */
-        right: 25px;
-        z-index: 999;
-        display: none; /* Hidden by default */
-        align-items: center;
-        justify-content: center;
-        width: 50px;
-        height: 50px;
-        background-color: #056afa;
-        color: white;
-        border-radius: 50%;
-        font-size: 1.5rem;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-        transition: all 0.3s ease;
+      position: fixed;
+      bottom: 100px;
+      /* Adjust to be above WhatsApp button */
+      right: 25px;
+      z-index: 999;
+      display: none;
+      /* Hidden by default */
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: #056afa;
+      color: white;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
     }
+
     .back-to-top:hover {
-        background-color: #044dc2;
-        transform: translateY(-3px);
-        box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+      background-color: #044dc2;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
+
 <body>
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCPS5HTD"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCPS5HTD" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <div id="bg-particles"></div>
 
   <header class="main-header">
@@ -775,519 +1129,821 @@
 
   <main>
     <section class="product-carousel-section">
-      <div class="container">
-        <h2 class="section-title">Nuestros Productos Premium</h2>
-        <p class="section-subtitle">
-          Explora nuestra selección de suplementos premium, científicamente formulados para apoyar tu salud y bienestar.
-        </p>
-
-        <div id="productCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000" data-bs-wrap="true">
+      <div class="container-fluid">
+        <div id="productCarousel" class="carousel slide" data-bs-ride="false">
           <div class="carousel-inner">
 
-            <div class="carousel-item active">
-              <div class="product-carousel-slide-inner">
-                <div class="product-image-col">
-                  <div class="product-image-container">
-                    <img src="recursos/FCT/CelestinFT__2024_V1.webp" alt="Celestin FT" class="product-carousel-image">
+            <div class="carousel-item active" data-product-id="celestin-ft">
+              <div class="product-slide-container">
+                <div class="product-main-content">
+                  <div class="product-image-section">
+                    <div class="product-image-container">
+                      <img src="recursos/FCT/CelestinFT__2024_V1.webp" alt="Celestin FT" class="product-carousel-image">
+                    </div>
                   </div>
-                </div>
-                <div class="product-text-col">
-                  <div class="product-text-content-wrapper">
-                    <h3>Celestin FT</h3>
-                    <p class="product-description">El factor de transferencia es un tratamiento que ayuda a tu sistema inmunitario a combatir enfermedades como <span>infecciones y cáncer</span>, utilizando información de células inmunitarias sanas. Se ha estudiado el factor de transferencia para el tratamiento de una variedad de afecciones, que incluyen:
-                      <ul>
-                        <li>Infecciones virales: como herpes, citomegalovirus y Epstein-Barr.</li>
-                        <li>Infecciones bacterianas: como tuberculosis y lepra.</li>
-                        <li>Infecciones por hongos: como candidiasis.</li>
-                        <li>Cáncer: como melanoma, leucemia y linfoma.</li>
-                        <li>Enfermedades autoinmunes: como artritis reumatoide y lupus.</li>
-                      </ul>
-                    </p>
-                    <div class="product-details">
-                      <ul>
-                        <li>Presentación: Polvo liofilizado, 1 unidad de 1.5ml después de reconstruirse.</li>
-                      </ul>
+                  <div class="product-info-section">
+                    <div class="product-title-container">
+                      <h3>Celestin <span class="pink-part">FT</span></h3>
+                    </div>
+                    <p class="product-description">El factor de transferencia es un tratamiento que ayuda a tu sistema
+                      inmunitario a combatir enfermedades como infecciones y cáncer, utilizando información de células
+                      inmunitarias sanas.</p>
+                    <div class="product-meta">
+                      <p><strong>Categoría:</strong> Suplementos Inmunológicos</p>
+                      <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
+                            class="fas fa-check-circle"></i> En stock</span></p>
                     </div>
                     <div class="product-price">
                       $350 c/u
                       <span class="wholesale-price">Mayoreo (más de 5): $300.00 por pieza</span>
                     </div>
-                    <button class="btn-add-to-cart" data-product-id="CelestinFT" data-product-name="Celestin FT" data-price="350">
-                      <i class="fas fa-cart-plus"></i> Agregar al Carrito
-                    </button>
-
-                    <div class="recommended-products-section">
-                        <h4>Productos Recomendados</h4>
-                        <div class="recommended-products-grid">
-                            <div class="recommended-product-card" data-target-id="InmBox">
-                                <img src="recursos/InmBox/InmBox__2025_V1-01.webp" alt="Inm Box">
-                                <h5>Inm Box</h5>
-                                <p class="price">$1,300</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="DailyPro">
-                                <img src="recursos/DailyPro 50/DailyPRO_50_2024_V2.webp" alt="Daily Pro">
-                                <h5>Daily Pro</h5>
-                                <p class="price">$600</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="DKFort">
-                                <img src="recursos/DK Fort/DKFort5__2024_V1.webp" alt="DK Fort">
-                                <h5>DK Fort</h5>
-                                <p class="price">$800</p>
-                            </div>
+                    <div class="product-actions">
+                      <div class="quantity-control">
+                        <button class="quantity-btn-minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn-plus">+</button>
+                      </div>
+                      <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                      <button class="btn-buy-now"><i class="fas fa-bolt"></i> Comprar Ahora</button>
+                      <button class="btn-wishlist" aria-label="Añadir a la lista de deseos"><i
+                          class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="share-options">
+                      <span class="share-label">Compartir:</span>
+                      <a href="#" class="share-icon share-facebook" aria-label="Compartir en Facebook"><i
+                          class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="share-icon share-twitter" aria-label="Compartir en Twitter"><i
+                          class="fab fa-twitter"></i></a>
+                      <a href="#" class="share-icon share-whatsapp" aria-label="Compartir en WhatsApp"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="#" class="share-icon share-email" aria-label="Compartir por correo"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="trust-badges-container">
+                      <div class="trust-badge"><i class="fas fa-truck"></i> Envío a todo México</div>
+                      <div class="trust-badge"><i class="fas fa-lock"></i> Pago seguro</div>
+                      <div class="trust-badge"><i class="fas fa-undo"></i> Devolución garantizada</div>
+                      <div class="trust-badge"><i class="fas fa-headset"></i> Soporte 24/7</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-tabs-container">
+                  <nav class="product-tabs-nav">
+                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                    <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
+                    <button class="product-tab-btn" data-tab="opiniones">Opiniones</button>
+                    <button class="product-tab-btn" data-tab="preguntas">Preguntas</button>
+                  </nav>
+                  <div class="product-tab-content">
+                    <div class="product-tab-panel active" data-tab-content="descripcion">
+                      <h4>Descripción Detallada</h4>
+                      <p>El Factor de Transferencia es una molécula inmunitaria que educa y fortalece las células de
+                        defensa. Contiene péptidos del calostro bovino que transfieren información clave al sistema
+                        inmune, ayudándole a reconocer y responder más eficazmente ante amenazas. Se ha estudiado para
+                        el tratamiento de una variedad de afecciones, que incluyen:</p>
+                      <ul>
+                        <li><strong>Infecciones virales:</strong> como herpes, citomegalovirus y Epstein-Barr.</li>
+                        <li><strong>Infecciones bacterianas:</strong> como tuberculosis y lepra.</li>
+                        <li><strong>Infecciones por hongos:</strong> como candidiasis.</li>
+                        <li><strong>Cáncer:</strong> como melanoma, leucemia y linfoma.</li>
+                        <li><strong>Enfermedades autoinmunes:</strong> como artritis reumatoide y lupus.</li>
+                      </ul>
+                      <p><strong>Presentación:</strong> Polvo liofilizado, 1 unidad de 1.5ml después de reconstruirse.
+                      </p>
+                    </div>
+                    <div class="product-tab-panel" data-tab-content="uso">
+                      <h4>Modo de Uso y Dosificación</h4>
+                      <p>Para obtener los mejores resultados, siga las indicaciones de un profesional de la salud.
+                        Generalmente, el producto se reconstruye y se administra de forma sublingual o según
+                        prescripción.</p>
+                      <ul>
+                        <li><strong>Uso Estándar:</strong> Una dosis diaria para mantenimiento del sistema inmune.</li>
+                        <li><strong>Fase Aguda:</strong> La dosis puede incrementarse durante periodos de enfermedad
+                          activa.</li>
+                        <li><strong>Recomendación:</strong> Mantener una buena hidratación y un estilo de vida saludable
+                          para potenciar los efectos.</li>
+                      </ul>
+                    </div>
+                    <div class="product-tab-panel" data-tab-content="opiniones">
+                      <h4>Opiniones de Clientes</h4>
+                      <p>Nuestros clientes reportan una notable disminución en la frecuencia de resfriados y gripes, así
+                        así como una recuperación más rápida. Es un pilar fundamental en su bienestar diario.</p>
+                    </div>
+                    <div class="product-tab-panel" data-tab-content="preguntas">
+                      <div class="faq-list">
+                        <div class="faq-item">
+                          <div class="faq-question">¿Tiene efectos secundarios? <i class="fas fa-plus toggle-icon"></i>
+                          </div>
+                          <div class="faq-answer">
+                            <p>Es un producto natural y bien tolerado. En casos raros, puede presentarse un leve
+                              malestar inicial mientras el sistema inmune se adapta.</p>
+                          </div>
                         </div>
+                        <div class="faq-item">
+                          <div class="faq-question">¿Es seguro para niños? <i class="fas fa-plus toggle-icon"></i></div>
+                          <div class="faq-answer">
+                            <p>Sí, es seguro y beneficioso para fortalecer el sistema inmune de los niños, siempre
+                              ajustando la dosis según recomendación pediátrica.</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="carousel-item">
-              <div class="product-carousel-slide-inner">
-                <div class="product-image-col">
-                  <div class="product-image-container">
-                    <img src="recursos/Null Age/NullAge3R_caja_abierta.jpg" alt="Null Age Ampolleta" class="product-carousel-image">
+            <div class="carousel-item" data-product-id="null-age-ampolleta">
+              <div class="product-slide-container">
+                <div class="product-main-content">
+                  <div class="product-image-section">
+                    <div class="product-image-container">
+                      <img src="recursos/Null Age/NullAge3R_caja_abierta.jpg" alt="Null Age Ampolleta"
+                        class="product-carousel-image">
+                    </div>
                   </div>
-                </div>
-                <div class="product-text-col">
-                  <div class="product-text-content-wrapper">
-                    <h3>Null Age Ampolleta</h3>
-                    <p class="product-description">Null Age es una fórmula innovadora que combina el poder regenerador del <span>extracto de placenta con el ácido hialurónico</span>, conocido por su capacidad de hidratar y rellenar arrugas. Además, sus factores de crecimiento estimulan la producción de colágeno y elastina, componentes esenciales para una piel joven y firme. ¡Despierta la juventud de tu piel con Null Age! NullAge 3R puede aplicarse de dos maneras: con dermapen o subcutánea abdominal. En ambos casos, se recomienda que sea prescrita y aplicada por un especialista de la salud.
-                      <ul>
-                        <li>Cicatrización y Rejuvenecimiento de la piel.</li>
-                        <li>Energía y Vitalidad física.</li>
-                        <li>Antioxidante y Antiinflamatorio.</li>
-                        <li>Perimenopausia.</li>
-                        <li>Regeneración de Hígado.</li>
-                        <li>Fibromialgia y Fatiga Crónica.</li>
-                      </ul>
-                    </p>
-                    <div class="product-details">
-                      <ul>
-                        <li>Presentación: Polvo liofilizado, 1 unidad de 2.5 ml después de reconstruirse.</li>
-                      </ul>
+                  <div class="product-info-section">
+                    <div class="product-title-container">
+                      <h3>Null <span class="pink-part">Age Ampolleta</span></h3>
+                    </div>
+                    <p class="product-description">Fórmula antienvejecimiento con extracto de placenta y ácido
+                      hialurónico para una regeneración celular profunda y una piel visiblemente más joven y firme.</p>
+                    <div class="product-meta">
+                      <p><strong>Categoría:</strong> Rejuvenecimiento</p>
+                      <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
+                            class="fas fa-check-circle"></i> En stock</span></p>
                     </div>
                     <div class="product-price">
                       $4000 c/u
                       <span class="wholesale-price">Mayoreo (más de 5): $3,500 por pieza</span>
                     </div>
-                    <button class="btn-add-to-cart" data-product-id="NullAgeAmpolleta" data-product-name="Null Age Ampolleta" data-price="4000">
-                      <i class="fas fa-cart-plus"></i> Agregar al Carrito
-                    </button>
-
-                    <div class="recommended-products-section">
-                        <h4>Productos Recomendados</h4>
-                        <div class="recommended-products-grid">
-                            <div class="recommended-product-card" data-target-id="NullAgeCapsula">
-                                <img src="recursos/Null Age/vista_N3R_03+(1).jpg" alt="Null Age Cápsula">
-                                <h5>Null Age Cápsula</h5>
-                                <p class="price">$2,500</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="Artikom">
-                                <img src="recursos/Artikom/ArtikOM3__2024_V1.webp" alt="Artikom">
-                                <h5>Artikom</h5>
-                                <p class="price">$800</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="CelestinFT">
-                                <img src="recursos/FCT/CelestinFT__2024_V1.webp" alt="Celestin FT">
-                                <h5>Celestin FT</h5>
-                                <p class="price">$350</p>
-                            </div>
+                    <div class="product-actions">
+                      <div class="quantity-control">
+                        <button class="quantity-btn-minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn-plus">+</button>
+                      </div>
+                      <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                      <button class="btn-buy-now"><i class="fas fa-bolt"></i> Comprar Ahora</button>
+                      <button class="btn-wishlist" aria-label="Añadir a la lista de deseos"><i
+                          class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="share-options">
+                      <span class="share-label">Compartir:</span>
+                      <a href="#" class="share-icon share-facebook" aria-label="Compartir en Facebook"><i
+                          class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="share-icon share-twitter" aria-label="Compartir en Twitter"><i
+                          class="fab fa-twitter"></i></a>
+                      <a href="#" class="share-icon share-whatsapp" aria-label="Compartir en WhatsApp"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="#" class="share-icon share-email" aria-label="Compartir por correo"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="trust-badges-container">
+                      <div class="trust-badge"><i class="fas fa-truck"></i> Envío a todo México</div>
+                      <div class="trust-badge"><i class="fas fa-lock"></i> Pago seguro</div>
+                      <div class="trust-badge"><i class="fas fa-undo"></i> Devolución garantizada</div>
+                      <div class="trust-badge"><i class="fas fa-headset"></i> Soporte 24/7</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-tabs-container">
+                  <nav class="product-tabs-nav">
+                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                    <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
+                    <button class="product-tab-btn" data-tab="preguntas">Preguntas</button>
+                  </nav>
+                  <div class="product-tab-content">
+                    <div class="product-tab-panel active" data-tab-content="descripcion">
+                      <h4>Beneficios Clave</h4>
+                      <ul>
+                        <li><strong>Regeneración Profunda:</strong> Estimula la producción de colágeno y elastina.</li>
+                        <li><strong>Efecto Anti-edad:</strong> Ayuda en la cicatrización, perimenopausia y regeneración
+                          hepática.</li>
+                        <li><strong>Vitalidad:</strong> Combate la fibromialgia y la fatiga crónica, aumentando la
+                          energía.</li>
+                        <li><strong>Antioxidante:</strong> Protege las células del estrés oxidativo y la inflamación.
+                        </li>
+                      </ul>
+                      <p><strong>Presentación:</strong> Polvo liofilizado, 1 unidad de 2.5 ml después de reconstruirse.
+                      </p>
+                    </div>
+                    <div class="product-tab-panel" data-tab-content="uso">
+                      <h4>Aplicación Profesional</h4>
+                      <p>NullAge 3R debe ser prescrito y aplicado por un especialista de la salud. Las vías de
+                        aplicación comunes son:</p>
+                      <ul>
+                        <li><strong>Dermapen:</strong> Para un rejuvenecimiento facial localizado y tratamiento de
+                          cicatrices.</li>
+                        <li><strong>Subcutánea abdominal:</strong> Para un efecto sistémico y regenerativo en todo el
+                          cuerpo.</li>
+                      </ul>
+                    </div>
+                    <div class="product-tab-panel" data-tab-content="preguntas">
+                      <div class="faq-list">
+                        <div class="faq-item">
+                          <div class="faq-question">¿Cuándo veré resultados? <i class="fas fa-plus toggle-icon"></i>
+                          </div>
+                          <div class="faq-answer">
+                            <p>Los efectos son progresivos. La mejora en la vitalidad puede notarse en las primeras
+                              semanas, mientras que los beneficios en la piel son más visibles después de un mes de
+                              tratamiento.</p>
+                          </div>
                         </div>
+                        <div class="faq-item">
+                          <div class="faq-question">¿Se puede combinar con otros tratamientos? <i
+                              class="fas fa-plus toggle-icon"></i></div>
+                          <div class="faq-answer">
+                            <p>Sí, de hecho, se recomienda usarlo junto con las cápsulas Null Age para prolongar y
+                              potenciar los resultados.</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="carousel-item">
-              <div class="product-carousel-slide-inner">
-                <div class="product-image-col">
-                  <div class="product-image-container">
-                    <img src="recursos/Null Age/vista_N3R_03+(1).jpg" alt="Null Age Cápsula" class="product-carousel-image">
+            <div class="carousel-item" data-product-id="null-age-capsula">
+              <div class="product-slide-container">
+                <div class="product-main-content">
+                  <div class="product-image-section">
+                    <div class="product-image-container">
+                      <img src="recursos/Null Age/vista_N3R_03+(1).jpg" alt="Null Age Cápsula"
+                        class="product-carousel-image">
+                    </div>
                   </div>
-                </div>
-                <div class="product-text-col">
-                  <div class="product-text-content-wrapper">
-                    <h3>Null Age Cápsula</h3>
-                    <p class="product-description">Intensifica y prolonga los efectos de NullAge 3R por mucho más tiempo. Además, brinda una carga de vitalidad que <span>incrementa la energía diaria</span>.</p>
-                    <div class="product-details">
-                      <ul>
-                        <li>Presentación: Frasco con 60 cápsulas.</li>
-                      </ul>
+                  <div class="product-info-section">
+                    <div class="product-title-container">
+                      <h3>Null <span class="pink-part">Age Cápsula</span></h3>
+                    </div>
+                    <p class="product-description">El complemento oral perfecto para intensificar y prolongar los
+                      efectos regenerativos de NullAge 3R, proporcionando una carga de vitalidad que incrementa la
+                      energía diaria.</p>
+                    <div class="product-meta">
+                      <p><strong>Categoría:</strong> Rejuvenecimiento</p>
+                      <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
+                            class="fas fa-check-circle"></i> En stock</span></p>
                     </div>
                     <div class="product-price">
                       $2500 c/u
                       <span class="wholesale-price">Mayoreo (más de 5): $2,000 por pieza</span>
                     </div>
-                    <button class="btn-add-to-cart" data-product-id="NullAgeCapsula" data-product-name="Null Age Cápsula" data-price="2500">
-                      <i class="fas fa-cart-plus"></i> Agregar al Carrito
-                    </button>
-
-                    <div class="recommended-products-section">
-                        <h4>Productos Recomendados</h4>
-                        <div class="recommended-products-grid">
-                            <div class="recommended-product-card" data-target-id="NullAgeAmpolleta">
-                                <img src="recursos/Null Age/NullAge3R_caja_abierta.jpg" alt="Null Age Ampolleta">
-                                <h5>Null Age Ampolleta</h5>
-                                <p class="price">$4,000</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="DKFort">
-                                <img src="recursos/DK Fort/DKFort5__2024_V1.webp" alt="DK Fort">
-                                <h5>DK Fort</h5>
-                                <p class="price">$800</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="InmMix">
-                                <img src="recursos/Inm Mix/proteinavegetal.png" alt="Inm Mix">
-                                <h5>Inm Mix</h5>
-                                <p class="price">$900</p>
-                            </div>
-                        </div>
+                    <div class="product-actions">
+                      <div class="quantity-control">
+                        <button class="quantity-btn-minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn-plus">+</button>
+                      </div>
+                      <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                      <button class="btn-buy-now"><i class="fas fa-bolt"></i> Comprar Ahora</button>
+                      <button class="btn-wishlist" aria-label="Añadir a la lista de deseos"><i
+                          class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="share-options">
+                      <span class="share-label">Compartir:</span>
+                      <a href="#" class="share-icon share-facebook" aria-label="Compartir en Facebook"><i
+                          class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="share-icon share-twitter" aria-label="Compartir en Twitter"><i
+                          class="fab fa-twitter"></i></a>
+                      <a href="#" class="share-icon share-whatsapp" aria-label="Compartir en WhatsApp"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="#" class="share-icon share-email" aria-label="Compartir por correo"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="trust-badges-container">
+                      <div class="trust-badge"><i class="fas fa-truck"></i> Envío a todo México</div>
+                      <div class="trust-badge"><i class="fas fa-lock"></i> Pago seguro</div>
+                      <div class="trust-badge"><i class="fas fa-undo"></i> Devolución garantizada</div>
+                      <div class="trust-badge"><i class="fas fa-headset"></i> Soporte 24/7</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-tabs-container">
+                  <nav class="product-tabs-nav">
+                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                    <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
+                  </nav>
+                  <div class="product-tab-content">
+                    <div class="product-tab-panel active" data-tab-content="descripcion">
+                      <h4>Energía y Mantenimiento</h4>
+                      <p>Diseñadas para tomarse diariamente, estas cápsulas aseguran que tu cuerpo reciba un flujo
+                        constante de nutrientes antienvejecimiento, manteniendo altos niveles de energía y apoyando la
+                        regeneración celular desde adentro.</p>
+                      <p><strong>Presentación:</strong> Frasco con 60 cápsulas.</p>
+                    </div>
+                    <div class="product-tab-panel" data-tab-content="uso">
+                      <h4>Dosis Diaria</h4>
+                      <ul>
+                        <li>Tomar 2 cápsulas al día, preferiblemente por la mañana.</li>
+                        <li>Para mejores resultados, usar en conjunto con el tratamiento de ampolletas Null Age.</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="carousel-item">
-              <div class="product-carousel-slide-inner">
-                <div class="product-image-col">
-                  <div class="product-image-container">
-                    <img src="recursos/Artikom/ArtikOM3__2024_V1.webp" alt="Artikom" class="product-carousel-image">
+            <div class="carousel-item" data-product-id="artikom">
+              <div class="product-slide-container">
+                <div class="product-main-content">
+                  <div class="product-image-section">
+                    <div class="product-image-container">
+                      <img src="recursos/Artikom/ArtikOM3__2024_V1.webp" alt="Artikom" class="product-carousel-image">
+                    </div>
                   </div>
-                </div>
-                <div class="product-text-col">
-                  <div class="product-text-content-wrapper">
-                    <h3>Artikom</h3>
-                    <p class="product-description">Auxiliar en padecimientos relacionados con el <span>sistema cardiovascular</span>:
-                      <ul>
-                        <li>Enfermedades cardiovasculares.</li>
-                        <li>Colesterol, triglicéridos y presión sanguínea.</li>
-                        <li>Omega-3 con mayor concentración de EPA/DHA.</li>
-                        <li>Antioxidante y antiinflamatorio.</li>
-                        <li>Aceite obtenido del krill antártico mediante pesca sustentable.</li>
-                      </ul>
-                    </p>
-                    <div class="product-details">
-                      <ul>
-                        <li>Presentación: 60 cápsulas de gel blindadas con 500g de aceite de krill.</li>
-                      </ul>
+                  <div class="product-info-section">
+                    <div class="product-title-container">
+                      <h3>Arti<span class="pink-part">kom</span></h3>
+                    </div>
+                    <p class="product-description">Potente suplemento a base de aceite de krill antártico, una fuente
+                      superior de Omega-3, para el cuidado integral del sistema cardiovascular y la reducción de la
+                      inflamación.</p>
+                    <div class="product-meta">
+                      <p><strong>Categoría:</strong> Salud Cardiovascular</p>
+                      <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
+                            class="fas fa-check-circle"></i> En stock</span></p>
                     </div>
                     <div class="product-price">
                       $800 c/u
                       <span class="wholesale-price">Mayoreo (más de 5): $700 por pieza</span>
                     </div>
-                    <button class="btn-add-to-cart" data-product-id="Artikom" data-product-name="Artikom" data-price="800">
-                      <i class="fas fa-cart-plus"></i> Agregar al Carrito
-                    </button>
-
-                    <div class="recommended-products-section">
-                        <h4>Productos Recomendados</h4>
-                        <div class="recommended-products-grid">
-                            <div class="recommended-product-card" data-target-id="DailyPro">
-                                <img src="recursos/DailyPro 50/DailyPRO_50_2024_V2.webp" alt="Daily Pro">
-                                <h5>Daily Pro</h5>
-                                <p class="price">$600</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="CelestinFT">
-                                <img src="recursos/FCT/CelestinFT__2024_V1.webp" alt="Celestin FT">
-                                <h5>Celestin FT</h5>
-                                <p class="price">$350</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="InmBox">
-                                <img src="recursos/InmBox/InmBox__2025_V1-01.webp" alt="Inm Box">
-                                <h5>Inm Box</h5>
-                                <p class="price">$1,300</p>
-                            </div>
-                        </div>
+                    <div class="product-actions">
+                      <div class="quantity-control">
+                        <button class="quantity-btn-minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn-plus">+</button>
+                      </div>
+                      <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                      <button class="btn-buy-now"><i class="fas fa-bolt"></i> Comprar Ahora</button>
+                      <button class="btn-wishlist" aria-label="Añadir a la lista de deseos"><i
+                          class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="share-options">
+                      <span class="share-label">Compartir:</span>
+                      <a href="#" class="share-icon share-facebook" aria-label="Compartir en Facebook"><i
+                          class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="share-icon share-twitter" aria-label="Compartir en Twitter"><i
+                          class="fab fa-twitter"></i></a>
+                      <a href="#" class="share-icon share-whatsapp" aria-label="Compartir en WhatsApp"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="#" class="share-icon share-email" aria-label="Compartir por correo"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="trust-badges-container">
+                      <div class="trust-badge"><i class="fas fa-truck"></i> Envío a todo México</div>
+                      <div class="trust-badge"><i class="fas fa-lock"></i> Pago seguro</div>
+                      <div class="trust-badge"><i class="fas fa-undo"></i> Devolución garantizada</div>
+                      <div class="trust-badge"><i class="fas fa-headset"></i> Soporte 24/7</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-tabs-container">
+                  <nav class="product-tabs-nav">
+                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                    <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
+                  </nav>
+                  <div class="product-tab-content">
+                    <div class="product-tab-panel active" data-tab-content="descripcion">
+                      <h4>Salud Cardiovascular y Más</h4>
+                      <ul>
+                        <li><strong>Controlar niveles de <strong>colesterol, triglicéridos</strong> y presión sanguínea.
+                        </li>
+                        <li>Proveer <strong>Omega-3</strong> con alta concentración de EPA/DHA para una máxima eficacia.
+                        </li>
+                        <li>Actuar como un potente <strong>antioxidante y antiinflamatorio</strong> natural.</li>
+                        <li>Garantizar la sostenibilidad mediante <strong>pesca sustentable</strong> de krill antártico.
+                        </li>
+                      </ul>
+                      <p><strong>Presentación:</strong> 60 cápsulas de gel blindadas con 500g de aceite de krill.</p>
+                    </div>
+                    <div class="product-tab-panel" data-tab-content="uso">
+                      <h4>Dosis Recomendada</h4>
+                      <ul>
+                        <li>Tomar 1 a 2 cápsulas diarias con los alimentos.</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="carousel-item">
-              <div class="product-carousel-slide-inner">
-                <div class="product-image-col">
-                  <div class="product-image-container">
-                    <img src="recursos/DailyPro 50/DailyPRO_50_2024_V2.webp" alt="Daily Pro" class="product-carousel-image">
-                  </div>
-                </div>
-                <div class="product-text-col">
-                  <div class="product-text-content-wrapper">
-                    <h3>Daily Pro (Kids, Adults, Senior)</h3>
-                    <p class="product-description">Auxiliar en padecimientos que afectan el <span>aparato digestivo</span>:
-                      <ul>
-                        <li>Diarrea y/o estreñimiento.</li>
-                        <li>Síndrome del intestino irritable o colon irritable.</li>
-                        <li>Post antibióticos.</li>
-                        <li>Obesidad y Desórdenes metabólicos.</li>
-                        <li>Alergias / Infecciones recurrentes o recidivantes.</li>
-                      </ul>
-                    </p>
-                    <div class="product-details">
-                      <ul>
-                        <li>Presentación: 30 sobres - 2 gramos c/u.</li>
-                      </ul>
-                    </div>
-                    <div class="product-price">
-                      $600 c/u
-                    </div>
-                    <button class="btn-add-to-cart" data-product-id="DailyPro" data-product-name="Daily Pro" data-price="600">
-                      <i class="fas fa-cart-plus"></i> Agregar al Carrito
-                    </button>
-
-                    <div class="recommended-products-section">
-                        <h4>Productos Recomendados</h4>
-                        <div class="recommended-products-grid">
-                            <div class="recommended-product-card" data-target-id="LFerrin">
-                                <img src="recursos/L Ferrín/51MpR08Z6lL._AC_SX569_.jpg" alt="L Ferrín">
-                                <h5>L Ferrín</h5>
-                                <p class="price">$800</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="InmMix">
-                                <img src="recursos/Inm Mix/proteinavegetal.png" alt="Inm Mix">
-                                <h5>Inm Mix</h5>
-                                <p class="price">$900</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="InmBox">
-                                <img src="recursos/InmBox/InmBox__2025_V1-01.webp" alt="Inm Box">
-                                <h5>Inm Box</h5>
-                                <p class="price">$1,300</p>
-                            </div>
-                        </div>
+            <div class="carousel-item" data-product-id="daily-pro">
+              <div class="product-slide-container">
+                <div class="product-main-content">
+                  <div class="product-image-section">
+                    <div class="product-image-container">
+                      <img src="recursos/DailyPro 50/DailyPRO_50_2024_V2.webp" alt="Daily Pro"
+                        class="product-carousel-image">
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="product-carousel-slide-inner">
-                <div class="product-image-col">
-                  <div class="product-image-container">
-                    <img src="recursos/DK Fort/DKFort5__2024_V1.webp" alt="DK Fort" class="product-carousel-image">
+                  <div class="product-info-section">
+                    <div class="product-title-container">
+                      <h3>Daily <span class="pink-part">Pro</span></h3>
+                    </div>
+                    <p class="product-description">Fórmula probiótica avanzada para restaurar la salud digestiva y
+                      fortalecer el sistema inmune, adaptada a cada etapa de la vida.</p>
+                    <div class="product-meta">
+                      <p><strong>Categoría:</strong> Salud Digestiva</p>
+                      <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
+                            class="fas fa-check-circle"></i> En stock</span></p>
+                    </div>
+                    <div class="product-price">$600 c/u</div>
+                    <div class="product-actions">
+                      <div class="quantity-control">
+                        <button class="quantity-btn-minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn-plus">+</button>
+                      </div>
+                      <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                      <button class="btn-buy-now"><i class="fas fa-bolt"></i> Comprar Ahora</button>
+                      <button class="btn-wishlist" aria-label="Añadir a la lista de deseos"><i
+                          class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="share-options">
+                      <span class="share-label">Compartir:</span>
+                      <a href="#" class="share-icon share-facebook" aria-label="Compartir en Facebook"><i
+                          class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="share-icon share-twitter" aria-label="Compartir en Twitter"><i
+                          class="fab fa-twitter"></i></a>
+                      <a href="#" class="share-icon share-whatsapp" aria-label="Compartir en WhatsApp"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="#" class="share-icon share-email" aria-label="Compartir por correo"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="trust-badges-container">
+                      <div class="trust-badge"><i class="fas fa-truck"></i> Envío a todo México</div>
+                      <div class="trust-badge"><i class="fas fa-lock"></i> Pago seguro</div>
+                      <div class="trust-badge"><i class="fas fa-undo"></i> Devolución garantizada</div>
+                      <div class="trust-badge"><i class="fas fa-headset"></i> Soporte 24/7</div>
+                    </div>
                   </div>
                 </div>
-                <div class="product-text-col">
-                  <div class="product-text-content-wrapper">
-                    <h3>DK Fort</h3>
-                    <p class="product-description">Multivitamínico que ayuda a <span>mejorar las defensas</span>, la vitamina D ayuda a regular la respuesta inmune. Además mejora la salud de tus huesos y dientes.
+                <div class="product-tabs-container">
+                  <nav class="product-tabs-nav">
+                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                    <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
+                  </nav>
+                  <div class="product-tab-content">
+                    <div class="product-tab-panel active" data-tab-content="descripcion">
+                      <h4>Equilibrio Digestivo Integral</h4>
+                      <p>Daily Pro es tu aliado para combatir:</p>
                       <ul>
-                        <li>Regula y mejora la respuesta inmune.</li>
-                        <li>Aporta nutrientes esenciales.</li>
-                        <li>Efecto más rápido y prolongado.</li>
-                        <li>Ideal para adultos mayores y mujeres embarazadas / lactancia.</li>
-                        <li>Mejora la salud de huesos y dientes.</li>
+                        <li><strong>Trastornos digestivos:</strong> Diarrea, estreñimiento y síndrome de intestino
+                          irritable.</li>
+                        <li><strong>Desequilibrio post-medicación:</strong> Ideal para restaurar la flora después de
+                          tomar antibióticos.</li>
+                        <li><strong>Problemas metabólicos y alergias:</strong> Ayuda a regular el metabolismo y a
+                          reducir la frecuencia de alergias e infecciones recurrentes.</li>
                       </ul>
-                    </p>
-                    <div class="product-details">
+                      <p><strong>Presentación:</strong> 30 sobres - 2 gramos c/u.</p>
+                    </div>
+                    <div class="product-tab-panel" data-tab-content="uso">
+                      <h4>Fácil de Integrar</h4>
                       <ul>
-                        <li>Presentación: Frasco con 120 cápsulas.</li>
+                        <li>Disolver el contenido de un sobre en agua o tu bebida favorita una vez al día.</li>
+                        <li>No requiere refrigeración.</li>
                       </ul>
-                    </div>
-                    <div class="product-price">
-                      $800 c/u
-                      <span class="wholesale-price">Mayoreo (más de 5): $700 por pieza</span>
-                    </div>
-                    <button class="btn-add-to-cart" data-product-id="DKFort" data-product-name="DK Fort" data-price="800">
-                      <i class="fas fa-cart-plus"></i> Agregar al Carrito
-                    </button>
-
-                    <div class="recommended-products-section">
-                        <h4>Productos Recomendados</h4>
-                        <div class="recommended-products-grid">
-                            <div class="recommended-product-card" data-target-id="CelestinFT">
-                                <img src="recursos/FCT/CelestinFT__2024_V1.webp" alt="Celestin FT">
-                                <h5>Celestin FT</h5>
-                                <p class="price">$350</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="LFerrin">
-                                <img src="recursos/L Ferrín/51MpR08Z6lL._AC_SX569_.jpg" alt="L Ferrín">
-                                <h5>L Ferrín</h5>
-                                <p class="price">$800</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="InmBox">
-                                <img src="recursos/InmBox/InmBox__2025_V1-01.webp" alt="Inm Box">
-                                <h5>Inm Box</h5>
-                                <p class="price">$1,300</p>
-                            </div>
-                        </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="carousel-item">
-              <div class="product-carousel-slide-inner">
-                <div class="product-image-col">
-                  <div class="product-image-container">
-                    <img src="recursos/L Ferrín/51MpR08Z6lL._AC_SX569_.jpg" alt="L Ferrín" class="product-carousel-image">
+            <div class="carousel-item" data-product-id="dk-fort">
+              <div class="product-slide-container">
+                <div class="product-main-content">
+                  <div class="product-image-section">
+                    <div class="product-image-container">
+                      <img src="recursos/DK Fort/DKFort5__2024_V1.webp" alt="DK Fort" class="product-carousel-image">
+                    </div>
                   </div>
-                </div>
-                <div class="product-text-col">
-                  <div class="product-text-content-wrapper">
-                    <h3>L Ferrín</h3>
-                    <p class="product-description">Suplemento alimenticio que contiene <span>lactoferrina, calostro y vitamina C</span>, auxiliar en la prevención de infecciones y el reforzamiento de la respuesta inmunitaria.
-                      <ul>
-                        <li>Infecciones respiratorias.</li>
-                        <li>Cáncer.</li>
-                        <li>Infecciones gastrointestinales / Diarrea infecciosa.</li>
-                        <li>Niños y personas inmunocomprometidas.</li>
-                        <li>Postoperatorio y Alto rendimiento deportivo.</li>
-                      </ul>
-                    </p>
-                    <div class="product-details">
-                      <ul>
-                        <li>Presentación: Frasco con 60 cápsulas.</li>
-                      </ul>
+                  <div class="product-info-section">
+                    <div class="product-title-container">
+                      <h3>DK <span class="pink-part">Fort</span></h3>
+                    </div>
+                    <p class="product-description">Multivitamínico esencial con Vitamina D y K para fortalecer tus
+                      defensas, mejorar la salud ósea y regular la respuesta inmune.</p>
+                    <div class="product-meta">
+                      <p><strong>Categoría:</strong> Multivitamínicos</p>
+                      <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
+                            class="fas fa-check-circle"></i> En stock</span></p>
                     </div>
                     <div class="product-price">
                       $800 c/u
                       <span class="wholesale-price">Mayoreo (más de 5): $700 por pieza</span>
                     </div>
-                    <button class="btn-add-to-cart" data-product-id="LFerrin" data-product-name="L Ferrín" data-price="800">
-                      <i class="fas fa-cart-plus"></i> Agregar al Carrito
-                    </button>
-
-                    <div class="recommended-products-section">
-                        <h4>Productos Recomendados</h4>
-                        <div class="recommended-products-grid">
-                            <div class="recommended-product-card" data-target-id="DailyPro">
-                                <img src="recursos/DailyPro 50/DailyPRO_50_2024_V2.webp" alt="Daily Pro">
-                                <h5>Daily Pro</h5>
-                                <p class="price">$600</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="DKFort">
-                                <img src="recursos/DK Fort/DKFort5__2024_V1.webp" alt="DK Fort">
-                                <h5>DK Fort</h5>
-                                <p class="price">$800</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="CelestinFT">
-                                <img src="recursos/FCT/CelestinFT__2024_V1.webp" alt="Celestin FT">
-                                <h5>Celestin FT</h5>
-                                <p class="price">$350</p>
-                            </div>
-                        </div>
+                    <div class="product-actions">
+                      <div class="quantity-control">
+                        <button class="quantity-btn-minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn-plus">+</button>
+                      </div>
+                      <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                      <button class="btn-buy-now"><i class="fas fa-bolt"></i> Comprar Ahora</button>
+                      <button class="btn-wishlist" aria-label="Añadir a la lista de deseos"><i
+                          class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="share-options">
+                      <span class="share-label">Compartir:</span>
+                      <a href="#" class="share-icon share-facebook" aria-label="Compartir en Facebook">
+                        <i="fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#" class="share-icon share-twitter" aria-label="Compartir en Twitter"><i
+                          class="fab fa-twitter"></i></a>
+                      <a href="#" class="share-icon share-whatsapp" aria-label="Compartir en WhatsApp"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="#" class="share-icon share-email" aria-label="Compartir por correo"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="trust-badges-container">
+                      <div class="trust-badge"><i class="fas fa-truck"></i> Envío a todo México</div>
+                      <div class="trust-badge"><i class="fas fa-lock"></i> Pago seguro</div>
+                      <div class="trust-badge"><i class="fas fa-undo"></i> Devolución garantizada</div>
+                      <div class="trust-badge"><i class="fas fa-headset"></i> Soporte 24/7</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-tabs-container">
+                  <nav class="product-tabs-nav">
+                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                    <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
+                  </nav>
+                  <div class="product-tab-content">
+                    <div class="product-tab-panel active" data-tab-content="descripcion">
+                      <h4>Doble Acción para tu Bienestar</h4>
+                      <ul>
+                        <li><strong>Sistema Inmune Fuerte:</strong> Regula y mejora la respuesta de tus defensas
+                          naturales.</li>
+                        <li><strong>Huesos y Dientes Sanos:</strong> Aporta nutrientes esenciales para la salud ósea.
+                        </li>
+                        <li><strong>Rápida Absorción:</strong> Su fórmula garantiza un efecto más rápido y prolongado.
+                        </li>
+                        <li><strong>Para Todos:</strong> Ideal para adultos mayores y mujeres durante el embarazo o
+                          lactancia.</li>
+                      </ul>
+                      <p><strong>Presentación:</strong> Frasco con 120 cápsulas.</p>
+                    </div>
+                    <div class="product-tab-panel" data-tab-content="uso">
+                      <h4>Dosis Diaria</h4>
+                      <ul>
+                        <li>Tomar de 1 a 2 cápsulas al día, preferentemente con alimentos.</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="carousel-item">
-              <div class="product-carousel-slide-inner">
-                <div class="product-image-col">
-                  <div class="product-image-container">
-                    <img src="recursos/Inm Mix/proteinavegetal.png" alt="Inm Mix" class="product-carousel-image">
+            <div class="carousel-item" data-product-id="l-ferrin">
+              <div class="product-slide-container">
+                <div class="product-main-content">
+                  <div class="product-image-section">
+                    <div class="product-image-container">
+                      <img src="recursos/L Ferrín/51MpR08Z6lL._AC_SX569_.jpg" alt="L Ferrín"
+                        class="product-carousel-image">
+                    </div>
+                  </div>
+                  <div class="product-info-section">
+                    <div class="product-title-container">
+                      <h3>L <span class="pink-part">Ferrín</span></h3>
+                    </div>
+                    <p class="product-description">Suplemento con Lactoferrina, Calostro y Vitamina C, un trío poderoso
+                      para la prevención de infecciones y el reforzamiento de la respuesta inmunitaria.</p>
+                    <div class="product-meta">
+                      <p><strong>Categoría:</strong> Suplementos Inmunológicos</p>
+                      <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
+                            class="fas fa-check-circle"></i> En stock</span></p>
+                    </div>
+                    <div class="product-price">
+                      $800 c/u
+                      <span class="wholesale-price">Mayoreo (más de 5): $700 por pieza</span>
+                    </div>
+                    <div class="product-actions">
+                      <div class="quantity-control">
+                        <button class="quantity-btn-minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn-plus">+</button>
+                      </div>
+                      <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                      <button class="btn-buy-now"><i class="fas fa-bolt"></i> Comprar Ahora</button>
+                      <button class="btn-wishlist" aria-label="Añadir a la lista de deseos"><i
+                          class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="share-options">
+                      <span class="share-label">Compartir:</span>
+                      <a href="#" class="share-icon share-facebook" aria-label="Compartir en Facebook"><i
+                          class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="share-icon share-twitter" aria-label="Compartir en Twitter"><i
+                          class="fab fa-twitter"></i></a>
+                      <a href="#" class="share-icon share-whatsapp" aria-label="Compartir en WhatsApp"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="#" class="share-icon share-email" aria-label="Compartir por correo"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="trust-badges-container">
+                      <div class="trust-badge"><i class="fas fa-truck"></i> Envío a todo México</div>
+                      <div class="trust-badge"><i class="fas fa-lock"></i> Pago seguro</div>
+                      <div class="trust-badge"><i class="fas fa-undo"></i> Devolución garantizada</div>
+                      <div class="trust-badge"><i class="fas fa-headset"></i> Soporte 24/7</div>
+                    </div>
                   </div>
                 </div>
-                <div class="product-text-col">
-                  <div class="product-text-content-wrapper">
-                    <h3>Inm Mix</h3>
-                    <p class="product-description">Proteína de origen vegetal, hecha con ingredientes 100% naturales que te brindan energía y ayudan a <span>reducir tu apetito</span>.
+                <div class="product-tabs-container">
+                  <nav class="product-tabs-nav">
+                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                    <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
+                  </nav>
+                  <div class="product-tab-content">
+                    <div class="product-tab-panel active" data-tab-content="descripcion">
+                      <h4>Escudo Protector Natural</h4>
                       <ul>
-                        <li>Mejora la digestión y reduce el apetito.</li>
-                        <li>Proteína de origen vegetal.</li>
-                        <li>Ayuda a regular niveles de glucosa y colesterol.</li>
-                        <li>Cada frasco te rinde 50 porciones.</li>
-                        <li>Apto para personas alérgicas o intolerantes a la lactosa.</li>
+                        <li><strong>Infecciones Respiratorias y Gastrointestinales:</strong> Previene y ayuda a combatir
+                          infecciones comunes.</li>
+                        <li><strong>Soporte Oncológico:</strong> Brinda apoyo al sistema inmune durante tratamientos
+                          contra el cáncer.</li>
+                        <li><strong>Poblaciones Vulnerables:</strong> Perfecto para niños y personas
+                          inmunocomprometidas.</li>
+                        <li><strong>Recuperación y Rendimiento:</strong> Ayuda en la recuperación postoperatoria y
+                          mejora el rendimiento deportivo.</li>
                       </ul>
-                    </p>
-                    <div class="product-details">
+                      <p><strong>Presentación:</strong> Frasco con 60 cápsulas.</p>
+                    </div>
+                    <div class="product-tab-panel" data-tab-content="uso">
+                      <h4>Modo de Empleo</h4>
                       <ul>
-                        <li>Presentación: Bote con 1000g.</li>
+                        <li>Tomar 2 cápsulas al día con un vaso de agua.</li>
                       </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-product-id="inm-mix">
+              <div class="product-slide-container">
+                <div class="product-main-content">
+                  <div class="product-image-section">
+                    <div class="product-image-container">
+                      <img src="recursos/Inm Mix/proteinavegetal.png" alt="Inm Mix" class="product-carousel-image">
+                    </div>
+                  </div>
+                  <div class="product-info-section">
+                    <div class="product-title-container">
+                      <h3>Inm <span class="pink-part">Mix</span></h3>
+                    </div>
+                    <p class="product-description">Deliciosa y nutritiva proteína de origen vegetal, elaborada con
+                      ingredientes 100% naturales para darte energía, mejorar la digestión y ayudarte a reducir el
+                      apetito.</p>
+                    <div class="product-meta">
+                      <p><strong>Categoría:</strong> Nutrición</p>
+                      <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
+                            class="fas fa-check-circle"></i> En stock</span></p>
                     </div>
                     <div class="product-price">
                       $900 c/u
                       <span class="wholesale-price">Mayoreo (más de 5): $800 por pieza</span>
                     </div>
-                    <button class="btn-add-to-cart" data-product-id="InmMix" data-product-name="Inm Mix" data-price="900">
-                      <i class="fas fa-cart-plus"></i> Agregar al Carrito
-                    </button>
-
-                    <div class="recommended-products-section">
-                        <h4>Productos Recomendados</h4>
-                        <div class="recommended-products-grid">
-                            <div class="recommended-product-card" data-target-id="DailyPro">
-                                <img src="recursos/DailyPro 50/DailyPRO_50_2024_V2.webp" alt="Daily Pro">
-                                <h5>Daily Pro</h5>
-                                <p class="price">$600</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="NullAgeCapsula">
-                                <img src="recursos/Null Age/vista_N3R_03+(1).jpg" alt="Null Age Cápsula">
-                                <h5>Null Age Cápsula</h5>
-                                <p class="price">$2,500</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="Artikom">
-                                <img src="recursos/Artikom/ArtikOM3__2024_V1.webp" alt="Artikom">
-                                <h5>Artikom</h5>
-                                <p class="price">$800</p>
-                            </div>
-                        </div>
+                    <div class="product-actions">
+                      <div class="quantity-control">
+                        <button class="quantity-btn-minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn-plus">+</button>
+                      </div>
+                      <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                      <button class="btn-buy-now"><i class="fas fa-bolt"></i> Comprar Ahora</button>
+                      <button class="btn-wishlist" aria-label="Añadir a la lista de deseos"><i
+                          class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="share-options">
+                      <span class="share-label">Compartir:</span>
+                      <a href="#" class="share-icon share-facebook" aria-label="Compartir en Facebook"><i
+                          class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="share-icon share-twitter" aria-label="Compartir en Twitter"><i
+                          class="fab fa-twitter"></i></a>
+                      <a href="#" class="share-icon share-whatsapp" aria-label="Compartir en WhatsApp"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="#" class="share-icon share-email" aria-label="Compartir por correo"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="trust-badges-container">
+                      <div class="trust-badge"><i class="fas fa-truck"></i> Envío a todo México</div>
+                      <div class="trust-badge"><i class="fas fa-lock"></i> Pago seguro</div>
+                      <div class="trust-badge"><i class="fas fa-undo"></i> Devolución garantizada</div>
+                      <div class="trust-badge"><i class="fas fa-headset"></i> Soporte 24/7</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-tabs-container">
+                  <nav class="product-tabs-nav">
+                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                    <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
+                  </nav>
+                  <div class="product-tab-content">
+                    <div class="product-tab-panel active" data-tab-content="descripcion">
+                      <h4>Nutrición Inteligente y Natural</h4>
+                      <ul>
+                        <li><strong>Control de Apetito:</strong> Ayuda a mejorar la digestión y a sentirte satisfecho
+                          por más tiempo.</li>
+                        <li><strong>100% Vegetal:</strong> Apta para personas alérgicas o intolerantes a la lactosa.
+                        </li>
+                        <li><strong>Salud Metabólica:</strong> Contribuye a regular los niveles de glucosa y colesterol.
+                        </li>
+                        <li><strong>Rendimiento Superior:</strong> Cada frasco te rinde 50 porciones nutritivas.</li>
+                      </ul>
+                      <p><strong>Presentación:</strong> Bote con 1000g.</p>
+                    </div>
+                    <div class="product-tab-panel" data-tab-content="uso">
+                      <h4>Preparación Sencilla</h4>
+                      <ul>
+                        <li>Mezclar una porción (20g) en 250ml de agua, leche vegetal o tu batido favorito.</li>
+                        <li>Ideal como desayuno, cena ligera o snack post-entrenamiento.</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="carousel-item">
-              <div class="product-carousel-slide-inner">
-                <div class="product-image-col">
-                  <div class="product-image-container">
-                    <img src="recursos/InmBox/InmBox__2025_V1-01.webp" alt="Inm Box" class="product-carousel-image">
+            <div class="carousel-item" data-product-id="inm-box">
+              <div class="product-slide-container">
+                <div class="product-main-content">
+                  <div class="product-image-section">
+                    <div class="product-image-container">
+                      <img src="recursos/InmBox/InmBox__2025_V1-01.webp" alt="Inm Box" class="product-carousel-image">
+                    </div>
                   </div>
-                </div>
-                <div class="product-text-col">
-                  <div class="product-text-content-wrapper">
-                    <h3>Inm Box</h3>
-                    <p class="product-description">Suplementos alimenticios que:
-                      <ul>
-                        <li>Fortalece el funcionamiento de los sistemas <span>inmunológico, cardiovascular y digestivo</span>.</li>
-                        <li>Intensifica los efectos positivos de los tratamientos médicos convencionales.</li>
-                        <li>Diseñado para facilitar su consumo diario.</li>
-                        <li>Elaborado bajo los estándares de la Secretaría de Salud y Cofepris.</li>
-                      </ul>
+                  <div class="product-info-section">
+                    <div class="product-title-container">
+                      <h3>Inm <span class="pink-part">Box</span></h3>
+                    </div>
+                    <p class="product-description">El kit definitivo para un blindaje inmunológico, cardiovascular y
+                      digestivo. Un tratamiento integral de 30 días diseñado para una máxima conveniencia y eficacia.
                     </p>
-                    <div class="product-details">
-                      <ul>
-                        <li>Presentación: 30 sobres de 2g cada uno con polvo a base de vitaminas y probióticos, 1 frasco con 30 cápsulas de gel blandas con 500g de aceite de krill, 1 frasco con 30 cápsulas de lactoferrina y vitamina C.</li>
-                      </ul>
+                    <div class="product-meta">
+                      <p><strong>Categoría:</strong> Salud Integral</p>
+                      <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
+                            class="fas fa-check-circle"></i> En stock</span></p>
                     </div>
                     <div class="product-price">
                       $1,300 c/u
                       <span class="wholesale-price">Mayoreo (más de 5): $1,200 por pieza</span>
                     </div>
-                    <button class="btn-add-to-cart" data-product-id="InmBox" data-product-name="Inm Box" data-price="1300">
-                      <i class="fas fa-cart-plus"></i> Agregar al Carrito
-                    </button>
-
-                    <div class="recommended-products-section">
-                        <h4>Productos Recomendados</h4>
-                        <div class="recommended-products-grid">
-                            <div class="recommended-product-card" data-target-id="CelestinFT">
-                                <img src="recursos/FCT/CelestinFT__2024_V1.webp" alt="Celestin FT">
-                                <h5>Celestin FT</h5>
-                                <p class="price">$350</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="DailyPro">
-                                <img src="recursos/DailyPro 50/DailyPRO_50_2024_V2.webp" alt="Daily Pro">
-                                <h5>Daily Pro</h5>
-                                <p class="price">$600</p>
-                            </div>
-                            <div class="recommended-product-card" data-target-id="Artikom">
-                                <img src="recursos/Artikom/ArtikOM3__2024_V1.webp" alt="Artikom">
-                                <h5>Artikom</h5>
-                                <p class="price">$800</p>
-                            </div>
-                        </div>
+                    <div class="product-actions">
+                      <div class="quantity-control">
+                        <button class="quantity-btn-minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn-plus">+</button>
+                      </div>
+                      <button class="btn-add-to-cart"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                      <button class="btn-buy-now"><i class="fas fa-bolt"></i> Comprar Ahora</button>
+                      <button class="btn-wishlist" aria-label="Añadir a la lista de deseos"><i
+                          class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="share-options">
+                      <span class="share-label">Compartir:</span>
+                      <a href="#" class="share-icon share-facebook" aria-label="Compartir en Facebook"><i
+                          class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="share-icon share-twitter" aria-label="Compartir en Twitter"><i
+                          class="fab fa-twitter"></i></a>
+                      <a href="#" class="share-icon share-whatsapp" aria-label="Compartir en WhatsApp"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="#" class="share-icon share-email" aria-label="Compartir por correo"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="trust-badges-container">
+                      <div class="trust-badge"><i class="fas fa-truck"></i> Envío a todo México</div>
+                      <div class="trust-badge"><i class="fas fa-lock"></i> Pago seguro</div>
+                      <div class="trust-badge"><i class="fas fa-undo"></i> Devolución garantizada</div>
+                      <div class="trust-badge"><i class="fas fa-headset"></i> Soporte 24/7</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-tabs-container">
+                  <nav class="product-tabs-nav">
+                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                  </nav>
+                  <div class="product-tab-content">
+                    <div class="product-tab-panel active" data-tab-content="descripcion">
+                      <h4>Fortaleza 360°</h4>
+                      <ul>
+                        <li><strong>Sinergia Total:</strong> Fortalece el funcionamiento de los sistemas inmunológico,
+                          cardiovascular y digestivo de forma simultánea.</li>
+                        <li><strong>Potenciador de Tratamientos:</strong> Intensifica los efectos positivos de los
+                          tratamientos médicos convencionales.</li>
+                        <li><strong>Fácil de Usar:</strong> Diseñado para facilitar su consumo diario con sobres y
+                          cápsulas organizadas.</li>
+                        <li><strong>Calidad Certificada:</strong> Elaborado bajo los más altos estándares de la
+                          Secretaría de Salud y Cofepris.</li>
+                      </ul>
+                      <p><strong>Presentación:</strong> 30 sobres de vitaminas y probióticos, 1 frasco con 30 cápsulas
+                        de aceite de krill, 1 frasco con 30 cápsulas de lactoferrina y vitamina C.</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -1303,53 +1959,53 @@
   </main>
 
   <footer class="footer-premium">
-    <div style="position: absolute; top: -5px; left: 0; width: 100%; height: 10px; background: linear-gradient(90deg, #056afa, #fff2df, #ffcffa, #417ecd); opacity: 0.8;"></div>
-
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTQ0MCAxNDQwIiB4bWxucz0iaHR0cDovL3d3dy5wMy5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0tMTAgLTEwIGwxNSAxNSBNLTIwIDAgeDE0NDogTTAgLTIwICAwIDE0NDAiIHN0cm9rZT0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjA1KSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9zdmc+'); background-size: 30px 30px; opacity: 0.2;"></div>
-    <div style="position: absolute; top: -100px; right: -100px; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle, rgba(98, 200, 243, 0.2) 0%, rgba(98, 200, 243, 0) 70%);"></div>
-    <div style="position: absolute; bottom: -150px; left: -150px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(255, 207, 250, 0.15) 0%, rgba(255, 207, 250, 0) 70%);"></div>
-
+    <div
+      style="position: absolute; top: -5px; left: 0; width: 100%; height: 10px; background: linear-gradient(90deg, #056afa, #fff2df, #ffcffa, #417ecd); opacity: 0.8;">
+    </div>
+    <div
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTQ0MCAxNDQwIiB4bWxucz0iaHR0cDovL3d3dy5wMy5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0tMTAgLTEwIGwxNSAxNSBNLTIwIDAgeDE0NDogTTAgLTIwICAwIDE0NDAiIHN0cm9rZT0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjA1KSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9zdmc+'); background-size: 30px 30px; opacity: 0.2;">
+    </div>
+    <div
+      style="position: absolute; top: -100px; right: -100px; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle, rgba(98, 200, 243, 0.2) 0%, rgba(98, 200, 243, 0) 70%);">
+    </div>
+    <div
+      style="position: absolute; bottom: -150px; left: -150px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(255, 207, 250, 0.15) 0%, rgba(255, 207, 250, 0) 70%);">
+    </div>
     <div class="container" style="position: relative; z-index: 1; max-width: 1600px; margin: 0 auto; padding: 0 16px;">
       <div class="footer-content">
         <div class="footer-section footer-logo">
           <div style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="recursos/simbolo/SimbFCT.png" alt="Logo Inmunomedi" class="logo" style="height: 60px; width: auto; object-fit: contain; margin-right: 15px;">
+            <img src="recursos/simbolo/SimbFCT.png" alt="Logo Inmunomedi"
+              style="height: 60px; width: auto; object-fit: contain; margin-right: 15px;">
           </div>
           <h4>Síguenos</h4>
           <div class="social-links" style="display: flex; gap: 15px; margin-top: 20px;">
-            <a href="https://www.facebook.com/FactorTransferenciaICelestinFT/" target="_blank" aria-label="Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.instagram.com/distribuidorinmunomedi" target="_blank" aria-label="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://wa.me/55560298059" target="_blank" aria-label="WhatsApp">
-              <i class="fab fa-whatsapp"></i>
-            </a>
+            <a href="https://www.facebook.com/FactorTransferenciaICelestinFT/" target="_blank" aria-label="Facebook"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/distribuidorinmunomedi" target="_blank" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/55560298059" target="_blank" aria-label="WhatsApp"><i
+                class="fab fa-whatsapp"></i></a>
           </div>
         </div>
-
         <div class="footer-section footer-links">
-          <h4>
-            Enlaces Rápidos
-          </h4>
+          <h4>Enlaces Rápidos</h4>
           <ul>
-            <li><a href="productos.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem; margin-right: 10px; color: #fff2df;"></i> Productos</a></li>
-            <li><a href="nosotros.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem; margin-right: 10px; color: #fff2df;"></i> Nosotros</a></li>
-            <li><a href="contacto.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem; margin-right: 10px; color: #fff2df;"></i> Contacto</a></li>
-            <li><a href="carrito.html"> <i class="fas fa-chevron-right" style="font-size: 0.7rem; margin-right: 10px; color: #fff2df;"></i> Carrito</a></li>
+            <li><a href="productos.html"><i class="fas fa-chevron-right"
+                  style="font-size: 0.7rem; margin-right: 10px; color: #fff2df;"></i> Productos</a></li>
+            <li><a href="nosotros.html"><i class="fas fa-chevron-right"
+                  style="font-size: 0.7rem; margin-right: 10px; color: #fff2df;"></i> Nosotros</a></li>
+            <li><a href="contacto.html"><i class="fas fa-chevron-right"
+                  style="font-size: 0.7rem; margin-right: 10px; color: #fff2df;"></i> Contacto</a></li>
+            <li><a href="carrito.html"> <i class="fas fa-chevron-right"
+                  style="font-size: 0.7rem; margin-right: 10px; color: #fff2df;"></i> Carrito</a></li>
           </ul>
         </div>
-
         <div class="footer-section footer-contact">
-          <h4>
-            Contáctanos
-          </h4>
+          <h4>Contáctanos</h4>
           <div style="display: flex; flex-direction: column; gap: 20px;">
             <div class="contact-item">
-              <div>
-                <i class="fas fa-phone"></i>
-              </div>
+              <div><i class="fas fa-phone"></i></div>
               <div>
                 <h5>Teléfono</h5>
                 <p><a href="tel:+525560298059">+52 55 6029 8059</a></p>
@@ -1357,9 +2013,7 @@
               </div>
             </div>
             <div class="contact-item">
-              <div>
-                <i class="fas fa-envelope"></i>
-              </div>
+              <div><i class="fas fa-envelope"></i></div>
               <div>
                 <h5>Email</h5>
                 <p><a href="mailto:contacto@inmunomedi.com">contacto@inmunomedi.com</a></p>
@@ -1368,7 +2022,6 @@
           </div>
         </div>
       </div>
-      
       <div class="footer-bottom">
         <p> 2025 <span>InmunoMedi</span>. Todos los derechos reservados.</p>
         <div class="footer-legal">
@@ -1390,10 +2043,8 @@
   </a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
   <script>
-    // Particle JS (re-using from index.html if it's meant to be global)
+    // Particle JS
     function getRandom(min, max) {
       return Math.random() * (max - min) + min;
     }
@@ -1405,12 +2056,9 @@
       particle.style.opacity = getRandom(0.4, 0.8);
       particle.style.filter = 'blur(' + getRandom(2, 5) + 'px)';
       particle.style.pointerEvents = 'none';
-
       particle.style.top = getRandom(0, 100) + 'vh';
       particle.style.left = getRandom(0, 100) + 'vw';
-
       let size, animationDuration, animationDelay;
-
       switch (type) {
         case 'immuneCellBlue':
           size = getRandom(60, 120);
@@ -1428,14 +2076,6 @@
           animationDuration = getRandom(18, 28);
           animationDelay = getRandom(0, 10);
           break;
-        case 'antibody':
-          size = getRandom(40, 80);
-          particle.style.width = size + 'px';
-          particle.style.height = size + 'px';
-          particle.style.border = `${getRandom(1, 3)}px solid rgba(5, 106, 250, ${getRandom(0.2, 0.4)})`;
-          animationDuration = getRandom(20, 30);
-          animationDelay = getRandom(0, 10);
-          break;
         case 'smallOrb':
           size = getRandom(5, 15);
           particle.style.width = size + 'px';
@@ -1446,7 +2086,6 @@
           particle.style.filter = 'blur(1px)';
           break;
       }
-
       particle.style.setProperty('--rand-val-1', Math.random());
       particle.style.setProperty('--rand-val-2', Math.random());
       particle.style.setProperty('--rand-val-3', Math.random());
@@ -1455,171 +2094,90 @@
       particle.style.setProperty('--rand-val-6', Math.random());
       particle.style.setProperty('--rand-val-7', Math.random());
       particle.style.setProperty('--rand-val-8', Math.random());
-
       particle.style.animation = `
         float-element ${animationDuration}s infinite ease-in-out alternate ${animationDelay}s,
         rotate-slow ${getRandom(20, 40)}s linear infinite ${getRandom(0, 10)}s,
         move-random ${getRandom(20, 40)}s infinite linear ${getRandom(0, 10)}s
       `;
-
       return particle;
     }
 
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       const particlesContainer = document.getElementById('bg-particles');
       const particleCount = 30;
-
-      const particleTypes = ['immuneCellBlue', 'immuneCellPink', 'antibody', 'smallOrb'];
-
+      const particleTypes = ['immuneCellBlue', 'immuneCellPink', 'smallOrb'];
       for (let i = 0; i < particleCount; i++) {
         const randomType = particleTypes[Math.floor(Math.random() * particleTypes.length)];
         const particle = createParticle(randomType);
         particlesContainer.appendChild(particle);
       }
 
-      // Initialize carousel content animations
-      const productCarousel = document.getElementById('productCarousel');
-      if (productCarousel) {
-          productCarousel.addEventListener('slid.bs.carousel', function(e) {
-              const activeSlide = e.relatedTarget; // The new active slide
+      const carousel = document.getElementById('productCarousel');
+      const carouselInstance = new bootstrap.Carousel(carousel);
 
-              // Reset animations for all slides (important for smooth transitions)
-              const allImages = this.querySelectorAll('.product-carousel-image');
-              const allTextWrappers = this.querySelectorAll('.product-text-content-wrapper');
+      // Function to handle tab and FAQ logic for a given slide
+      function initializeSlide(slideElement) {
+        const tabButtons = slideElement.querySelectorAll('.product-tab-btn');
+        const tabPanels = slideElement.querySelectorAll('.product-tab-panel');
+        const faqItems = slideElement.querySelectorAll('.faq-item');
 
-              allImages.forEach(img => {
-                  img.style.opacity = 0;
-                  img.style.transform = 'scale(0.8)';
-                  img.style.transitionDelay = '0s';
-              });
-              allTextWrappers.forEach(wrapper => {
-                  wrapper.querySelectorAll('h3, .product-description, .product-details, .product-price, .btn-add-to-cart, .recommended-products-section').forEach(el => {
-                      el.style.opacity = 0;
-                      el.style.transform = 'translateY(20px)';
-                      el.style.transitionDelay = '0s';
-                  });
-              });
+        // Tab functionality
+        tabButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const tabName = button.dataset.tab;
 
-              // Force reflow
-              void activeSlide.offsetWidth;
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
 
-              // Animate in the content of the new active slide
-              const activeImage = activeSlide.querySelector('.product-carousel-image');
-              const activeTextWrapper = activeSlide.querySelector('.product-text-content-wrapper');
-              
-              if (activeImage) {
-                  activeImage.style.opacity = 1;
-                  activeImage.style.transform = 'scale(1)';
-                  activeImage.style.transitionDelay = '0.1s';
+            tabPanels.forEach(panel => {
+              if (panel.dataset.tabContent === tabName) {
+                panel.classList.add('active');
+              } else {
+                panel.classList.remove('active');
               }
-              if (activeTextWrapper) {
-                  activeTextWrapper.querySelectorAll('h3, .product-description, .product-details, .product-price, .btn-add-to-cart, .recommended-products-section').forEach((el, index) => {
-                      el.style.opacity = 1;
-                      el.style.transform = 'translateY(0)';
-                      el.style.transitionDelay = `${0.2 + index * 0.08}s`;
-                  });
-              }
-          });
-
-          // Trigger initial animation for the first slide on load
-          const firstSlide = productCarousel.querySelector('.carousel-item.active');
-          const firstImage = firstSlide.querySelector('.product-carousel-image');
-          const firstTextWrapper = firstSlide.querySelector('.product-text-content-wrapper');
-
-          if (firstImage) {
-              firstImage.style.opacity = 1;
-              firstImage.style.transform = 'scale(1)';
-              firstImage.style.transitionDelay = '0.1s';
-          }
-          if (firstTextWrapper) {
-              firstTextWrapper.querySelectorAll('h3, .product-description, .product-details, .product-price, .btn-add-to-cart, .recommended-products-section').forEach((el, index) => {
-                  el.style.opacity = 1;
-                  el.style.transform = 'translateY(0)';
-                  el.style.transitionDelay = `${0.2 + index * 0.08}s`;
-              });
-          }
-      }
-    });
-
-    // Back to Top button functionality
-    window.onscroll = function() {
-      var backToTopButton = document.querySelector('.back-to-top');
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        backToTopButton.style.display = "flex";
-      } else {
-        backToTopButton.style.display = "none";
-      }
-    };
-
-    document.querySelector('.back-to-top').addEventListener('click', function(e) {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Add to Cart functionality (client-side, simple example using localStorage)
-    document.querySelectorAll('.btn-add-to-cart').forEach(button => {
-      button.addEventListener('click', function() {
-        const productId = this.dataset.productId;
-        const productName = this.dataset.productName;
-        const productPrice = parseFloat(this.dataset.price);
-
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        
-        // Check if product already in cart
-        let existingItem = cart.find(item => item.id === productId);
-
-        if (existingItem) {
-          existingItem.quantity++;
-        } else {
-          cart.push({ id: productId, name: productName, price: productPrice, quantity: 1 });
-        }
-
-        localStorage.setItem('cart', JSON.stringify(cart));
-        
-        // Add click animation
-        this.classList.add('clicked');
-        this.addEventListener('animationend', () => {
-            this.classList.remove('clicked');
-        }, { once: true });
-
-        alert(`${productName} ha sido añadido al carrito.`);
-        updateCartCount(); // Update cart count in the header
-      });
-    });
-
-    // Function to update the cart count in the header
-    function updateCartCount() {
-      let cart = JSON.parse(localStorage.getItem('cart')) || [];
-      let totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-      const cartCountSpan = document.querySelector('.main-header .nav-links .cart-count');
-      if (cartCountSpan) {
-        cartCountSpan.textContent = totalItems > 0 ? ` (${totalItems})` : '';
-      }
-    }
-
-    // Call updateCartCount on page load to show initial cart state
-    updateCartCount();
-
-    // Handle clicks on recommended product cards to navigate the carousel
-    document.querySelectorAll('.recommended-product-card').forEach(card => {
-        card.addEventListener('click', function() {
-            const targetId = this.dataset.targetId;
-            const carousel = document.getElementById('productCarousel');
-            const carouselItems = Array.from(carousel.querySelectorAll('.carousel-item'));
-            
-            // Find the index of the target product by its ID
-            const targetIndex = carouselItems.findIndex(item => {
-                const button = item.querySelector('.btn-add-to-cart');
-                return button && button.dataset.productId === targetId;
             });
-
-            if (targetIndex !== -1) {
-                const bsCarousel = bootstrap.Carousel.getInstance(carousel) || new bootstrap.Carousel(carousel);
-                bsCarousel.to(targetIndex); // Go to the target slide
-            }
+          });
         });
-    });
 
+        // FAQ functionality
+        faqItems.forEach(item => {
+          const question = item.querySelector('.faq-question');
+          question.addEventListener('click', () => {
+            const wasActive = item.classList.contains('active');
+            // Close all items in the same slide
+            faqItems.forEach(i => i.classList.remove('active'));
+            // Toggle the clicked item
+            if (!wasActive) {
+              item.classList.add('active');
+            }
+          });
+        });
+      }
+
+      // Initialize all slides at the beginning
+      document.querySelectorAll('.carousel-item').forEach(slide => {
+        initializeSlide(slide);
+      });
+
+      // Back to Top button functionality
+      var backToTopButton = document.querySelector('.back-to-top');
+      if (backToTopButton) {
+        window.onscroll = function () {
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.style.display = "flex";
+          } else {
+            backToTopButton.style.display = "none";
+          }
+        };
+
+        backToTopButton.addEventListener('click', function (e) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+    });
   </script>
 </body>
+
 </html>
