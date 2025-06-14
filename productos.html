@@ -44,12 +44,12 @@
       margin: 0;
       padding: 0;
       overflow-x: hidden;
-      /* Evitar scroll horizontal */
+      /* Evitar desplazamiento horizontal */
       font-family: 'Montserrat', sans-serif;
       /* Fuente global */
     }
 
-    /* Estilos para el Header */
+    /* Estilos para el Encabezado Principal */
     .main-header {
       background-color: #056afa;
       /* El mismo azul de las letras */
@@ -62,7 +62,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      /* Asegura que el header esté por encima de otros elementos */
+      /* Asegura que el encabezado esté por encima de otros elementos */
       flex-wrap: wrap;
       /* Permite que los elementos se envuelvan en pantallas pequeñas */
     }
@@ -76,7 +76,7 @@
 
     .main-header .logo-container img {
       height: 60px;
-      /* Ajusta el tamaño del logo al alto del header */
+      /* Ajusta el tamaño del logo al alto del encabezado */
       width: auto;
       object-fit: contain;
     }
@@ -108,7 +108,7 @@
       transform: translateY(-2px);
     }
 
-    /* Media queries para responsividad del header */
+    /* Media queries para responsividad del encabezado */
     @media (max-width: 768px) {
       .main-header {
         flex-direction: column;
@@ -132,7 +132,7 @@
       }
     }
 
-    /* Titulos de Seccion */
+    /* Títulos de Sección */
     .section-header {
       text-align: center;
       margin-bottom: 70px;
@@ -169,18 +169,18 @@
       opacity: 0.9;
     }
 
-    /* Estilos de la seccion de productos */
+    /* Estilos de la sección de productos */
     .product-carousel-section {
       padding: 0;
-      /* Changed from 80px 0 to 0 */
+      /* Cambiado de 80px 0 a 0 */
       position: relative;
-      /* Ensure it takes full width */
+      /* Asegura que ocupe todo el ancho */
       width: 100%;
       box-sizing: border-box;
-      /* Include padding in the element's total width and height */
+      /* Incluye el padding en el ancho y alto total del elemento */
     }
 
-    /* Remove default container padding to allow full width */
+    /* Elimina el padding predeterminado del contenedor para permitir el ancho completo */
     .product-carousel-section .container-fluid {
       padding-left: 0;
       padding-right: 0;
@@ -189,7 +189,7 @@
     /* Estilos del carrusel de productos */
     #productCarousel .carousel-inner {
       overflow: visible;
-      /* Permitir que las sombras se vean */
+      /* Permite que las sombras se vean */
     }
 
     #productCarousel .carousel-item {
@@ -205,11 +205,11 @@
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.5);
       transition: all 0.4s ease;
-      /* Changed max-width from 1400px to 1600px */
+      /* Cambiado el ancho máximo de 1400px a 1600px */
       max-width: 1600px;
-      /* Adjust as needed */
+      /* Ajustar según sea necesario */
       margin: 0 auto;
-      /* Center the container */
+      /* Centra el contenedor */
     }
 
     @media (max-width: 991.98px) {
@@ -237,9 +237,9 @@
     .product-image-container {
       background: rgb(255, 255, 255);
       border-radius: 40px;
-      /* Apply border-radius here */
+      /* Aplicar borde-radio aquí */
       padding: 0px;
-      /* Changed padding to 0px to allow image to fill entirely */
+      /* Cambiado el padding a 0px para permitir que la imagen se llene completamente */
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       display: flex;
       align-items: center;
@@ -247,7 +247,7 @@
       height: 600px;
       transition: transform 0.3s ease;
       overflow: hidden;
-      /* Ensure content respects border-radius */
+      /* Asegura que el contenido respete el borde-radio */
     }
 
     .product-image-container:hover {
@@ -258,9 +258,9 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      /* Ensures the image covers the entire container while maintaining aspect ratio */
+      /* Asegura que la imagen cubra todo el contenedor manteniendo la relación de aspecto */
       border-radius: 40px;
-      /* Apply border-radius to the image as well, matching its container */
+      /* Aplica el borde-radio a la imagen, coincidiendo con su contenedor */
       filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
     }
 
@@ -273,21 +273,21 @@
     .product-info-section .product-title-container {
       display: flex;
       justify-content: center;
-      /* Center the title block */
+      /* Centra el bloque del título */
       margin-bottom: 15px;
-      /* Adjust spacing as needed */
+      /* Ajusta el espaciado según sea necesario */
       text-align: center;
-      /* Ensure text inside is centered */
+      /* Asegura que el texto interior esté centrado */
       position: relative;
-      /* For the underline effect */
+      /* Para el efecto de subrayado */
       padding-bottom: 20px;
-      /* Space for the underline */
+      /* Espacio para el subrayado */
     }
 
     .product-info-section .product-title-container h3 {
       font-family: 'Montserrat', sans-serif;
       font-size: min(2.5rem, 6vw);
-      /* Responsive font size */
+      /* Tamaño de fuente responsivo */
       font-weight: 900;
       text-transform: uppercase;
       margin: 0;
@@ -295,50 +295,50 @@
       line-height: 1;
       position: relative;
       display: inline-block;
-      /* Allows underline to be relative to text width */
+      /* Permite que el subrayado sea relativo al ancho del texto */
       text-shadow: 0 3px 15px rgba(5, 106, 250, 0.2);
-      /* Base shadow for blue text */
+      /* Sombra base para el texto azul */
 
       background: linear-gradient(135deg, #056afa 20%, #417ecd 50%, #056afa 80%);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
-      /* Makes the gradient visible through text */
+      /* Hace que el degradado sea visible a través del texto */
     }
 
-    /* Style for the pink part of the title */
+    /* Estilo para la parte rosa del título */
     .product-info-section .product-title-container h3 span.pink-part {
       background: none;
-      /* Remove background-clip for this part */
+      /* Elimina el background-clip para esta parte */
       color: #FF80AA !important;
-      /* Apply the vibrant pink color directly */
+      /* Aplica el color rosa vibrante directamente */
       text-shadow: 0 3px 15px rgba(255, 128, 170, 0.4);
-      /* Adjust shadow for pink text */
+      /* Ajusta la sombra para el texto rosa */
       display: inline;
-      /* Keep it inline with the rest of the title */
+      /* Lo mantiene en línea con el resto del título */
     }
 
-    /* Style for the animated underline */
+    /* Estilo para el subrayado animado */
     .product-info-section .product-title-container h3::after {
       content: '';
       position: absolute;
       bottom: -10px;
-      /* Position below the text */
+      /* Posición debajo del texto */
       left: 50%;
       transform: translateX(-50%);
-      /* Center it */
+      /* Centrarlo */
       width: 80%;
-      /* Adjust width relative to title */
+      /* Ajustar el ancho relativo al título */
       max-width: 150px;
-      /* Max width for underline */
+      /* Ancho máximo para el subrayado */
       height: 4px;
       background: linear-gradient(90deg, #056afa, #ffcffa);
-      /* Gradient underline */
+      /* Subrayado degradado */
       border-radius: 4px;
       overflow: hidden;
       box-shadow: 0 1px 6px rgba(5, 106, 250, 0.2);
       animation: shimmer-underline 2s infinite ease-in-out;
-      /* Add shimmer animation */
+      /* Agrega animación de brillo */
     }
 
     @keyframes shimmer-underline {
@@ -358,6 +358,11 @@
       }
     }
 
+    /* Moved this style up to keep it with tab-related styles for easier access */
+    .product-tabs-container {
+      margin-top: 15px; /* Adjusted margin to be closer to title */
+    }
+
     .product-info-section .product-description {
       font-size: 1.1rem;
       line-height: 1.7;
@@ -366,8 +371,9 @@
       margin-bottom: 20px;
     }
 
-    /* Product Meta (Category, Availability) */
+    /* Metadatos del Producto (Categoría, Disponibilidad) */
     .product-meta {
+      margin-top: 20px; /* Adjusted margin to be closer to tabs */
       margin-bottom: 10px;
       font-size: 0.95rem;
       color: #417ecd;
@@ -379,12 +385,12 @@
 
     .product-meta strong {
       color: #056afa;
-      /* Ensure category/availability labels are clear */
+      /* Asegura que las etiquetas de categoría/disponibilidad sean claras */
     }
 
     .product-meta .fa-check-circle {
       color: #28a745;
-      /* Green checkmark */
+      /* Marca de verificación verde */
     }
 
 
@@ -406,7 +412,7 @@
     .product-actions {
       display: flex;
       flex-wrap: wrap;
-      /* Allow buttons to wrap on smaller screens */
+      /* Permite que los botones se envuelvan en pantallas más pequeñas */
       gap: 15px;
       margin-top: 20px;
       align-items: center;
@@ -446,7 +452,7 @@
       background: transparent;
     }
 
-    /* Hide number input arrows */
+    /* Oculta las flechas de entrada numérica */
     .quantity-control input::-webkit-outer-spin-button,
     .quantity-control input::-webkit-inner-spin-button {
       -webkit-appearance: none;
@@ -480,7 +486,7 @@
       margin-right: 10px;
     }
 
-    /* Style for Buy Now button */
+    /* Estilo para el botón Comprar Ahora */
     .btn-buy-now {
       background: linear-gradient(135deg, #FF80AA, #e75c87);
       color: white;
@@ -503,7 +509,7 @@
       margin-right: 10px;
     }
 
-    /* Style for Wishlist button */
+    /* Estilo para el botón de Lista de Deseos */
     .btn-wishlist {
       background: rgba(255, 255, 255, 0.2);
       color: #056afa;
@@ -526,11 +532,11 @@
       box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     }
 
-    /* Share options */
+    /* Opciones de Compartir */
     .share-options {
       display: flex;
       flex-wrap: wrap;
-      /* Allow icons to wrap if space is limited */
+      /* Permite que los íconos se envuelvan si el espacio es limitado */
       gap: 10px;
       margin-top: 20px;
       align-items: center;
@@ -538,9 +544,9 @@
       color: #417ecd;
       font-weight: 600;
       padding-top: 15px;
-      /* Add some space from buttons */
+      /* Agrega un poco de espacio desde los botones */
       border-top: 1px solid rgba(5, 106, 250, 0.1);
-      /* Separator line */
+      /* Línea separadora */
     }
 
     .share-options .share-label {
@@ -565,7 +571,7 @@
       transform: translateY(-2px);
     }
 
-    /* Specific social media colors for better branding */
+    /* Colores específicos de redes sociales para una mejor marca */
     .share-options .share-icon.share-facebook {
       background-color: #3b5998;
       color: white;
@@ -603,7 +609,7 @@
     }
 
 
-    /* Trust badges */
+    /* Insignias de confianza */
     .trust-badges-container {
       display: flex;
       flex-wrap: wrap;
@@ -629,7 +635,7 @@
 
     .trust-badge i {
       color: #FF80AA;
-      /* Icon color from pink palette */
+      /* Color del icono de la paleta rosa */
       font-size: 1.1rem;
     }
 
@@ -639,11 +645,7 @@
     }
 
 
-    /* Tabs de Información Adicional */
-    .product-tabs-container {
-      margin-top: 50px;
-    }
-
+    /* Pestañas de Información Adicional */
     .product-tabs-nav {
       display: flex;
       border-bottom: 2px solid rgba(5, 106, 250, 0.2);
@@ -676,17 +678,28 @@
       color: #056afa;
     }
 
+    .product-tab-content {
+      /* This wrapper is kept for structure, but the panels inside control display */
+      background-color: rgba(255, 255, 255, 0.5);
+      /* Background for the content box */
+      padding: 30px;
+      /* Padding for the content box */
+      border-radius: 15px;
+      /* Rounded corners for the content box */
+      color: #056afa;
+      /* Text color inside the content box */
+    }
+
     .product-tab-panel {
       display: none;
+      /* Hidden by default */
       animation: fadeIn 0.5s ease;
-      background-color: rgba(255, 255, 255, 0.5);
-      padding: 30px;
-      border-radius: 15px;
-      color: #056afa;
+      /* No background or padding here, it's applied to .product-tab-content */
     }
 
     .product-tab-panel.active {
       display: block;
+      /* Visible when active */
     }
 
     .product-tab-panel h4 {
@@ -721,7 +734,7 @@
       top: 2px;
     }
 
-    /* FAQ (Acordeón) */
+    /* Preguntas Frecuentes (Acordeón) */
     .faq-item {
       background: white;
       border-radius: 10px;
@@ -763,11 +776,12 @@
 
     .faq-item.active .faq-answer {
       max-height: 300px;
-      /* Adjust as needed */
+      /* Ajustar según sea necesario */
+      padding-top: 10px;
     }
 
 
-    /* Carousel navigation buttons */
+    /* Botones de navegación del carrusel */
     #productCarousel .carousel-control-prev,
     #productCarousel .carousel-control-next {
       width: 45px;
@@ -825,7 +839,7 @@
     }
 
 
-    /* Particles for background (re-using from index.html) */
+    /* Partículas para el fondo (reutilizando de index.html) */
     #bg-particles {
       position: fixed;
       top: 0;
@@ -907,7 +921,7 @@
       }
     }
 
-    /* Footer and floating buttons (re-using from index.html) */
+    /* Pie de página y botones flotantes (reutilizando de index.html) */
     .footer-premium {
       background: linear-gradient(135deg, #056afa 0%, #417ecd 100%);
       color: white;
@@ -1049,7 +1063,7 @@
       color: #fff2df;
     }
 
-    /* WhatsApp Button */
+    /* Botón de WhatsApp */
     .whatsapp-btn {
       position: fixed;
       bottom: 25px;
@@ -1077,15 +1091,15 @@
       box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
     }
 
-    /* Back to Top Button */
+    /* Botón Volver Arriba */
     .back-to-top {
       position: fixed;
       bottom: 100px;
-      /* Adjust to be above WhatsApp button */
+      /* Ajusta para estar encima del botón de WhatsApp */
       right: 25px;
       z-index: 999;
       display: none;
-      /* Hidden by default */
+      /* Oculto por defecto */
       align-items: center;
       justify-content: center;
       width: 50px;
@@ -1145,9 +1159,78 @@
                     <div class="product-title-container">
                       <h3>Celestin <span class="pink-part">FT</span></h3>
                     </div>
-                    <p class="product-description">El factor de transferencia es un tratamiento que ayuda a tu sistema
-                      inmunitario a combatir enfermedades como infecciones y cáncer, utilizando información de células
-                      inmunitarias sanas.</p>
+                    <div class="product-tabs-container">
+                      <nav class="product-tabs-nav">
+                        <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                        <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
+                        <button class="product-tab-btn" data-tab="opiniones">Opiniones</button>
+                        <button class="product-tab-btn" data-tab="preguntas">Preguntas</button>
+                      </nav>
+                      <div class="product-tab-content">
+                        <div class="product-tab-panel active" data-tab-content="descripcion">
+                          <h4>Descripción Detallada</h4>
+                          <p>El Factor de Transferencia es una molécula inmunitaria que educa y fortalece las células de
+                            defensa. Contiene péptidos del calostro bovino que transfieren información clave al sistema
+                            inmune, ayudándole a reconocer y responder más eficazmente ante amenazas. Se ha estudiado
+                            para
+                            el tratamiento de una variedad de afecciones, que incluyen:</p>
+                          <ul>
+                            <li><strong>Infecciones virales:</strong> como herpes, citomegalovirus y Epstein-Barr.</li>
+                            <li><strong>Infecciones bacterianas:</strong> como tuberculosis y lepra.</li>
+                            <li><strong>Infecciones por hongos:</strong> como candidiasis.</li>
+                            <li><strong>Cáncer:</strong> como melanoma, leucemia y linfoma.</li>
+                            <li><strong>Enfermedades autoinmunes:</strong> como artritis reumatoide y lupus.</li>
+                          </ul>
+                          <p><strong>Presentación:</strong> Polvo liofilizado, 1 unidad de 1.5ml después de
+                            reconstruirse.
+                          </p>
+                        </div>
+                        <div class="product-tab-panel" data-tab-content="uso">
+                          <h4>Modo de Uso y Dosificación</h4>
+                          <p>Para obtener los mejores resultados, siga las indicaciones de un profesional de la salud.
+                            Generalmente, el producto se reconstruye y se administra de forma sublingual o según
+                            prescripción.</p>
+                          <ul>
+                            <li><strong>Uso Estándar:</strong> Una dosis diaria para mantenimiento del sistema inmune.
+                            </li>
+                            <li><strong>Fase Aguda:</strong> La dosis puede incrementarse durante periodos de enfermedad
+                              activa.</li>
+                            <li><strong>Recomendación:</strong> Mantener una buena hidratación y un estilo de vida
+                              saludable
+                              para potenciar los efectos.</li>
+                          </ul>
+                        </div>
+                        <div class="product-tab-panel" data-tab-content="opiniones">
+                          <h4>Opiniones de Clientes</h4>
+                          <p>Nuestros clientes reportan una notable disminución en la frecuencia de resfriados y gripes,
+                            así
+                            así como una recuperación más rápida. Es un pilar fundamental en su bienestar diario.</p>
+                        </div>
+                        <div class="product-tab-panel" data-tab-content="preguntas">
+                          <h4>Preguntas Frecuentes</h4>
+                          <div class="faq-list">
+                            <div class="faq-item">
+                              <div class="faq-question">¿Tiene efectos secundarios? <i
+                                  class="fas fa-plus toggle-icon"></i>
+                              </div>
+                              <div class="faq-answer">
+                                <p>Es un producto natural y bien tolerado. En casos raros, puede presentarse un leve
+                                  malestar inicial mientras el sistema inmune se adapta.</p>
+                              </div>
+                            </div>
+                            <div class="faq-item">
+                              <div class="faq-question">¿Es seguro para niños? <i class="fas fa-plus toggle-icon"></i>
+                              </div>
+                              <div class="faq-answer">
+                                <p>Sí, es seguro y beneficioso para fortalecer el sistema inmune de los niños, siempre
+                                  ajustando la dosis según recomendación pediátrica.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                     <div class="product-meta">
                       <p><strong>Categoría:</strong> Suplementos Inmunológicos</p>
                       <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
@@ -1187,69 +1270,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="product-tabs-container">
-                  <nav class="product-tabs-nav">
-                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
-                    <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
-                    <button class="product-tab-btn" data-tab="opiniones">Opiniones</button>
-                    <button class="product-tab-btn" data-tab="preguntas">Preguntas</button>
-                  </nav>
-                  <div class="product-tab-content">
-                    <div class="product-tab-panel active" data-tab-content="descripcion">
-                      <h4>Descripción Detallada</h4>
-                      <p>El Factor de Transferencia es una molécula inmunitaria que educa y fortalece las células de
-                        defensa. Contiene péptidos del calostro bovino que transfieren información clave al sistema
-                        inmune, ayudándole a reconocer y responder más eficazmente ante amenazas. Se ha estudiado para
-                        el tratamiento de una variedad de afecciones, que incluyen:</p>
-                      <ul>
-                        <li><strong>Infecciones virales:</strong> como herpes, citomegalovirus y Epstein-Barr.</li>
-                        <li><strong>Infecciones bacterianas:</strong> como tuberculosis y lepra.</li>
-                        <li><strong>Infecciones por hongos:</strong> como candidiasis.</li>
-                        <li><strong>Cáncer:</strong> como melanoma, leucemia y linfoma.</li>
-                        <li><strong>Enfermedades autoinmunes:</strong> como artritis reumatoide y lupus.</li>
-                      </ul>
-                      <p><strong>Presentación:</strong> Polvo liofilizado, 1 unidad de 1.5ml después de reconstruirse.
-                      </p>
-                    </div>
-                    <div class="product-tab-panel" data-tab-content="uso">
-                      <h4>Modo de Uso y Dosificación</h4>
-                      <p>Para obtener los mejores resultados, siga las indicaciones de un profesional de la salud.
-                        Generalmente, el producto se reconstruye y se administra de forma sublingual o según
-                        prescripción.</p>
-                      <ul>
-                        <li><strong>Uso Estándar:</strong> Una dosis diaria para mantenimiento del sistema inmune.</li>
-                        <li><strong>Fase Aguda:</strong> La dosis puede incrementarse durante periodos de enfermedad
-                          activa.</li>
-                        <li><strong>Recomendación:</strong> Mantener una buena hidratación y un estilo de vida saludable
-                          para potenciar los efectos.</li>
-                      </ul>
-                    </div>
-                    <div class="product-tab-panel" data-tab-content="opiniones">
-                      <h4>Opiniones de Clientes</h4>
-                      <p>Nuestros clientes reportan una notable disminución en la frecuencia de resfriados y gripes, así
-                        así como una recuperación más rápida. Es un pilar fundamental en su bienestar diario.</p>
-                    </div>
-                    <div class="product-tab-panel" data-tab-content="preguntas">
-                      <div class="faq-list">
-                        <div class="faq-item">
-                          <div class="faq-question">¿Tiene efectos secundarios? <i class="fas fa-plus toggle-icon"></i>
-                          </div>
-                          <div class="faq-answer">
-                            <p>Es un producto natural y bien tolerado. En casos raros, puede presentarse un leve
-                              malestar inicial mientras el sistema inmune se adapta.</p>
-                          </div>
-                        </div>
-                        <div class="faq-item">
-                          <div class="faq-question">¿Es seguro para niños? <i class="fas fa-plus toggle-icon"></i></div>
-                          <div class="faq-answer">
-                            <p>Sí, es seguro y beneficioso para fortalecer el sistema inmune de los niños, siempre
-                              ajustando la dosis según recomendación pediátrica.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -1266,8 +1286,67 @@
                     <div class="product-title-container">
                       <h3>Null <span class="pink-part">Age Ampolleta</span></h3>
                     </div>
-                    <p class="product-description">Fórmula antienvejecimiento con extracto de placenta y ácido
-                      hialurónico para una regeneración celular profunda y una piel visiblemente más joven y firme.</p>
+                    <div class="product-tabs-container">
+                      <nav class="product-tabs-nav">
+                        <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                        <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
+                        <button class="product-tab-btn" data-tab="preguntas">Preguntas</button>
+                      </nav>
+                      <div class="product-tab-content">
+                        <div class="product-tab-panel active" data-tab-content="descripcion">
+                          <h4>Beneficios Clave</h4>
+                          <ul>
+                            <li><strong>Regeneración Profunda:</strong> Estimula la producción de colágeno y elastina.
+                            </li>
+                            <li><strong>Efecto Anti-edad:</strong> Ayuda en la cicatrización, perimenopausia y
+                              regeneración
+                              hepática.</li>
+                            <li><strong>Vitalidad:</strong> Combate la fibromialgia y la fatiga crónica, aumentando la
+                              energía.</li>
+                            <li><strong>Antioxidante:</strong> Protege las células del estrés oxidativo y la
+                              inflamación.
+                            </li>
+                          </ul>
+                          <p><strong>Presentación:</strong> Polvo liofilizado, 1 unidad de 2.5 ml después de
+                            reconstruirse.
+                          </p>
+                        </div>
+                        <div class="product-tab-panel" data-tab-content="uso">
+                          <h4>Aplicación Profesional</h4>
+                          <p>NullAge 3R debe ser prescrito y aplicado por un especialista de la salud. Las vías de
+                            aplicación comunes son:</p>
+                          <ul>
+                            <li><strong>Dermapen:</strong> Para un rejuvenecimiento facial localizado y tratamiento de
+                              cicatrices.</li>
+                            <li><strong>Subcutánea abdominal:</strong> Para un efecto sistémico y regenerativo en todo
+                              el
+                              cuerpo.</li>
+                          </ul>
+                        </div>
+                        <div class="product-tab-panel" data-tab-content="preguntas">
+                          <h4>Preguntas Frecuentes</h4>
+                          <div class="faq-list">
+                            <div class="faq-item">
+                              <div class="faq-question">¿Cuándo veré resultados? <i class="fas fa-plus toggle-icon"></i>
+                              </div>
+                              <div class="faq-answer">
+                                <p>Los efectos son progresivos. La mejora en la vitalidad puede notarse en las primeras
+                                  semanas, mientras que los beneficios en la piel son más visibles después de un mes de
+                                  tratamiento.</p>
+                              </div>
+                            </div>
+                            <div class="faq-item">
+                              <div class="faq-question">¿Se puede combinar con otros tratamientos? <i
+                                  class="fas fa-plus toggle-icon"></i></div>
+                              <div class="faq-answer">
+                                <p>Sí, de hecho, se recomienda usarlo junto con las cápsulas Null Age para prolongar y
+                                  potenciar los resultados.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product-meta">
                       <p><strong>Categoría:</strong> Rejuvenecimiento</p>
                       <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
@@ -1307,61 +1386,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="product-tabs-container">
-                  <nav class="product-tabs-nav">
-                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
-                    <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
-                    <button class="product-tab-btn" data-tab="preguntas">Preguntas</button>
-                  </nav>
-                  <div class="product-tab-content">
-                    <div class="product-tab-panel active" data-tab-content="descripcion">
-                      <h4>Beneficios Clave</h4>
-                      <ul>
-                        <li><strong>Regeneración Profunda:</strong> Estimula la producción de colágeno y elastina.</li>
-                        <li><strong>Efecto Anti-edad:</strong> Ayuda en la cicatrización, perimenopausia y regeneración
-                          hepática.</li>
-                        <li><strong>Vitalidad:</strong> Combate la fibromialgia y la fatiga crónica, aumentando la
-                          energía.</li>
-                        <li><strong>Antioxidante:</strong> Protege las células del estrés oxidativo y la inflamación.
-                        </li>
-                      </ul>
-                      <p><strong>Presentación:</strong> Polvo liofilizado, 1 unidad de 2.5 ml después de reconstruirse.
-                      </p>
-                    </div>
-                    <div class="product-tab-panel" data-tab-content="uso">
-                      <h4>Aplicación Profesional</h4>
-                      <p>NullAge 3R debe ser prescrito y aplicado por un especialista de la salud. Las vías de
-                        aplicación comunes son:</p>
-                      <ul>
-                        <li><strong>Dermapen:</strong> Para un rejuvenecimiento facial localizado y tratamiento de
-                          cicatrices.</li>
-                        <li><strong>Subcutánea abdominal:</strong> Para un efecto sistémico y regenerativo en todo el
-                          cuerpo.</li>
-                      </ul>
-                    </div>
-                    <div class="product-tab-panel" data-tab-content="preguntas">
-                      <div class="faq-list">
-                        <div class="faq-item">
-                          <div class="faq-question">¿Cuándo veré resultados? <i class="fas fa-plus toggle-icon"></i>
-                          </div>
-                          <div class="faq-answer">
-                            <p>Los efectos son progresivos. La mejora en la vitalidad puede notarse en las primeras
-                              semanas, mientras que los beneficios en la piel son más visibles después de un mes de
-                              tratamiento.</p>
-                          </div>
-                        </div>
-                        <div class="faq-item">
-                          <div class="faq-question">¿Se puede combinar con otros tratamientos? <i
-                              class="fas fa-plus toggle-icon"></i></div>
-                          <div class="faq-answer">
-                            <p>Sí, de hecho, se recomienda usarlo junto con las cápsulas Null Age para prolongar y
-                              potenciar los resultados.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -1378,9 +1402,30 @@
                     <div class="product-title-container">
                       <h3>Null <span class="pink-part">Age Cápsula</span></h3>
                     </div>
-                    <p class="product-description">El complemento oral perfecto para intensificar y prolongar los
-                      efectos regenerativos de NullAge 3R, proporcionando una carga de vitalidad que incrementa la
-                      energía diaria.</p>
+                    <div class="product-tabs-container">
+                      <nav class="product-tabs-nav">
+                        <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                        <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
+                      </nav>
+                      <div class="product-tab-content">
+                        <div class="product-tab-panel active" data-tab-content="descripcion">
+                          <h4>Energía y Mantenimiento</h4>
+                          <p>Diseñadas para tomarse diariamente, estas cápsulas aseguran que tu cuerpo reciba un flujo
+                            constante de nutrientes antienvejecimiento, manteniendo altos niveles de energía y apoyando
+                            la
+                            regeneración celular desde adentro.</p>
+                          <p><strong>Presentación:</strong> Frasco con 60 cápsulas.</p>
+                        </div>
+                        <div class="product-tab-panel" data-tab-content="uso">
+                          <h4>Dosis Diaria</h4>
+                          <ul>
+                            <li>Tomar 2 cápsulas al día, preferiblemente por la mañana.</li>
+                            <li>Para mejores resultados, usar en conjunto con el tratamiento de ampolletas Null Age.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product-meta">
                       <p><strong>Categoría:</strong> Rejuvenecimiento</p>
                       <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
@@ -1420,28 +1465,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="product-tabs-container">
-                  <nav class="product-tabs-nav">
-                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
-                    <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
-                  </nav>
-                  <div class="product-tab-content">
-                    <div class="product-tab-panel active" data-tab-content="descripcion">
-                      <h4>Energía y Mantenimiento</h4>
-                      <p>Diseñadas para tomarse diariamente, estas cápsulas aseguran que tu cuerpo reciba un flujo
-                        constante de nutrientes antienvejecimiento, manteniendo altos niveles de energía y apoyando la
-                        regeneración celular desde adentro.</p>
-                      <p><strong>Presentación:</strong> Frasco con 60 cápsulas.</p>
-                    </div>
-                    <div class="product-tab-panel" data-tab-content="uso">
-                      <h4>Dosis Diaria</h4>
-                      <ul>
-                        <li>Tomar 2 cápsulas al día, preferiblemente por la mañana.</li>
-                        <li>Para mejores resultados, usar en conjunto con el tratamiento de ampolletas Null Age.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -1457,9 +1480,37 @@
                     <div class="product-title-container">
                       <h3>Arti<span class="pink-part">kom</span></h3>
                     </div>
-                    <p class="product-description">Potente suplemento a base de aceite de krill antártico, una fuente
-                      superior de Omega-3, para el cuidado integral del sistema cardiovascular y la reducción de la
-                      inflamación.</p>
+                    <div class="product-tabs-container">
+                      <nav class="product-tabs-nav">
+                        <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                        <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
+                      </nav>
+                      <div class="product-tab-content">
+                        <div class="product-tab-panel active" data-tab-content="descripcion">
+                          <h4>Salud Cardiovascular y Más</h4>
+                          <ul>
+                            <li><strong>Controlar niveles de <strong>colesterol, triglicéridos</strong> y presión
+                                sanguínea.
+                            </li>
+                            <li>Proveer <strong>Omega-3</strong> con alta concentración de EPA/DHA para una máxima
+                              eficacia.
+                            </li>
+                            <li>Actuar como un potente <strong>antioxidante y antiinflamatorio</strong> natural.</li>
+                            <li>Garantizar la sostenibilidad mediante <strong>pesca sustentable</strong> de krill
+                              antártico.
+                            </li>
+                          </ul>
+                          <p><strong>Presentación:</strong> 60 cápsulas de gel blindadas con 500g de aceite de krill.
+                          </p>
+                        </div>
+                        <div class="product-tab-panel" data-tab-content="uso">
+                          <h4>Dosis Recomendada</h4>
+                          <ul>
+                            <li>Tomar 1 a 2 cápsulas diarias con los alimentos.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product-meta">
                       <p><strong>Categoría:</strong> Salud Cardiovascular</p>
                       <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
@@ -1499,33 +1550,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="product-tabs-container">
-                  <nav class="product-tabs-nav">
-                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
-                    <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
-                  </nav>
-                  <div class="product-tab-content">
-                    <div class="product-tab-panel active" data-tab-content="descripcion">
-                      <h4>Salud Cardiovascular y Más</h4>
-                      <ul>
-                        <li><strong>Controlar niveles de <strong>colesterol, triglicéridos</strong> y presión sanguínea.
-                        </li>
-                        <li>Proveer <strong>Omega-3</strong> con alta concentración de EPA/DHA para una máxima eficacia.
-                        </li>
-                        <li>Actuar como un potente <strong>antioxidante y antiinflamatorio</strong> natural.</li>
-                        <li>Garantizar la sostenibilidad mediante <strong>pesca sustentable</strong> de krill antártico.
-                        </li>
-                      </ul>
-                      <p><strong>Presentación:</strong> 60 cápsulas de gel blindadas con 500g de aceite de krill.</p>
-                    </div>
-                    <div class="product-tab-panel" data-tab-content="uso">
-                      <h4>Dosis Recomendada</h4>
-                      <ul>
-                        <li>Tomar 1 a 2 cápsulas diarias con los alimentos.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -1542,8 +1566,34 @@
                     <div class="product-title-container">
                       <h3>Daily <span class="pink-part">Pro</span></h3>
                     </div>
-                    <p class="product-description">Fórmula probiótica avanzada para restaurar la salud digestiva y
-                      fortalecer el sistema inmune, adaptada a cada etapa de la vida.</p>
+                    <div class="product-tabs-container">
+                      <nav class="product-tabs-nav">
+                        <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                        <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
+                      </nav>
+                      <div class="product-tab-content">
+                        <div class="product-tab-panel active" data-tab-content="descripcion">
+                          <h4>Equilibrio Digestivo Integral</h4>
+                          <p>Daily Pro es tu aliado para combatir:</p>
+                          <ul>
+                            <li><strong>Trastornos digestivos:</strong> Diarrea, estreñimiento y síndrome de intestino
+                              irritable.</li>
+                            <li><strong>Desequilibrio post-medicación:</strong> Ideal para restaurar la flora después de
+                              tomar antibióticos.</li>
+                            <li><strong>Problemas metabólicos y alergias:</strong> Ayuda a regular el metabolismo y a
+                              reducir la frecuencia de alergias e infecciones recurrentes.</li>
+                          </ul>
+                          <p><strong>Presentación:</strong> 30 sobres - 2 gramos c/u.</p>
+                        </div>
+                        <div class="product-tab-panel" data-tab-content="uso">
+                          <h4>Fácil de Integrar</h4>
+                          <ul>
+                            <li>Disolver el contenido de un sobre en agua o tu bebida favorita una vez al día.</li>
+                            <li>No requiere refrigeración.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product-meta">
                       <p><strong>Categoría:</strong> Salud Digestiva</p>
                       <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
@@ -1580,34 +1630,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="product-tabs-container">
-                  <nav class="product-tabs-nav">
-                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
-                    <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
-                  </nav>
-                  <div class="product-tab-content">
-                    <div class="product-tab-panel active" data-tab-content="descripcion">
-                      <h4>Equilibrio Digestivo Integral</h4>
-                      <p>Daily Pro es tu aliado para combatir:</p>
-                      <ul>
-                        <li><strong>Trastornos digestivos:</strong> Diarrea, estreñimiento y síndrome de intestino
-                          irritable.</li>
-                        <li><strong>Desequilibrio post-medicación:</strong> Ideal para restaurar la flora después de
-                          tomar antibióticos.</li>
-                        <li><strong>Problemas metabólicos y alergias:</strong> Ayuda a regular el metabolismo y a
-                          reducir la frecuencia de alergias e infecciones recurrentes.</li>
-                      </ul>
-                      <p><strong>Presentación:</strong> 30 sobres - 2 gramos c/u.</p>
-                    </div>
-                    <div class="product-tab-panel" data-tab-content="uso">
-                      <h4>Fácil de Integrar</h4>
-                      <ul>
-                        <li>Disolver el contenido de un sobre en agua o tu bebida favorita una vez al día.</li>
-                        <li>No requiere refrigeración.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -1623,8 +1645,36 @@
                     <div class="product-title-container">
                       <h3>DK <span class="pink-part">Fort</span></h3>
                     </div>
-                    <p class="product-description">Multivitamínico esencial con Vitamina D y K para fortalecer tus
-                      defensas, mejorar la salud ósea y regular la respuesta inmune.</p>
+                    <div class="product-tabs-container">
+                      <nav class="product-tabs-nav">
+                        <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                        <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
+                      </nav>
+                      <div class="product-tab-content">
+                        <div class="product-tab-panel active" data-tab-content="descripcion">
+                          <h4>Doble Acción para tu Bienestar</h4>
+                          <ul>
+                            <li><strong>Sistema Inmune Fuerte:</strong> Regula y mejora la respuesta de tus defensas
+                              naturales.</li>
+                            <li><strong>Huesos y Dientes Sanos:</strong> Aporta nutrientes esenciales para la salud
+                              ósea.
+                            </li>
+                            <li><strong>Rápida Absorción:</strong> Su fórmula garantiza un efecto más rápido y
+                              prolongado.
+                            </li>
+                            <li><strong>Para Todos:</strong> Ideal para adultos mayores y mujeres durante el embarazo o
+                              lactancia.</li>
+                          </ul>
+                          <p><strong>Presentación:</strong> Frasco con 120 cápsulas.</p>
+                        </div>
+                        <div class="product-tab-panel" data-tab-content="uso">
+                          <h4>Dosis Diaria</h4>
+                          <ul>
+                            <li>Tomar de 1 a 2 cápsulas al día, preferentemente con alimentos.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product-meta">
                       <p><strong>Categoría:</strong> Multivitamínicos</p>
                       <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
@@ -1648,7 +1698,7 @@
                     <div class="share-options">
                       <span class="share-label">Compartir:</span>
                       <a href="#" class="share-icon share-facebook" aria-label="Compartir en Facebook">
-                        <i="fab fa-facebook-f"></i>
+                        <i class="fab fa-facebook-f"></i>
                       </a>
                       <a href="#" class="share-icon share-twitter" aria-label="Compartir en Twitter"><i
                           class="fab fa-twitter"></i></a>
@@ -1662,34 +1712,6 @@
                       <div class="trust-badge"><i class="fas fa-lock"></i> Pago seguro</div>
                       <div class="trust-badge"><i class="fas fa-undo"></i> Devolución garantizada</div>
                       <div class="trust-badge"><i class="fas fa-headset"></i> Soporte 24/7</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-tabs-container">
-                  <nav class="product-tabs-nav">
-                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
-                    <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
-                  </nav>
-                  <div class="product-tab-content">
-                    <div class="product-tab-panel active" data-tab-content="descripcion">
-                      <h4>Doble Acción para tu Bienestar</h4>
-                      <ul>
-                        <li><strong>Sistema Inmune Fuerte:</strong> Regula y mejora la respuesta de tus defensas
-                          naturales.</li>
-                        <li><strong>Huesos y Dientes Sanos:</strong> Aporta nutrientes esenciales para la salud ósea.
-                        </li>
-                        <li><strong>Rápida Absorción:</strong> Su fórmula garantiza un efecto más rápido y prolongado.
-                        </li>
-                        <li><strong>Para Todos:</strong> Ideal para adultos mayores y mujeres durante el embarazo o
-                          lactancia.</li>
-                      </ul>
-                      <p><strong>Presentación:</strong> Frasco con 120 cápsulas.</p>
-                    </div>
-                    <div class="product-tab-panel" data-tab-content="uso">
-                      <h4>Dosis Diaria</h4>
-                      <ul>
-                        <li>Tomar de 1 a 2 cápsulas al día, preferentemente con alimentos.</li>
-                      </ul>
                     </div>
                   </div>
                 </div>
@@ -1709,8 +1731,35 @@
                     <div class="product-title-container">
                       <h3>L <span class="pink-part">Ferrín</span></h3>
                     </div>
-                    <p class="product-description">Suplemento con Lactoferrina, Calostro y Vitamina C, un trío poderoso
-                      para la prevención de infecciones y el reforzamiento de la respuesta inmunitaria.</p>
+                    <div class="product-tabs-container">
+                      <nav class="product-tabs-nav">
+                        <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                        <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
+                      </nav>
+                      <div class="product-tab-content">
+                        <div class="product-tab-panel active" data-tab-content="descripcion">
+                          <h4>Escudo Protector Natural</h4>
+                          <ul>
+                            <li><strong>Infecciones Respiratorias y Gastrointestinales:</strong> Previene y ayuda a
+                              combatir
+                              infecciones comunes.</li>
+                            <li><strong>Soporte Oncológico:</strong> Brinda apoyo al sistema inmune durante tratamientos
+                              contra el cáncer.</li>
+                            <li><strong>Poblaciones Vulnerables:</strong> Perfecto para niños y personas
+                              inmunocomprometidas.</li>
+                            <li><strong>Recuperación y Rendimiento:</strong> Ayuda en la recuperación postoperatoria y
+                              mejora el rendimiento deportivo.</li>
+                          </ul>
+                          <p><strong>Presentación:</strong> Frasco con 60 cápsulas.</p>
+                        </div>
+                        <div class="product-tab-panel" data-tab-content="uso">
+                          <h4>Modo de Empleo</h4>
+                          <ul>
+                            <li>Tomar 2 cápsulas al día con un vaso de agua.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product-meta">
                       <p><strong>Categoría:</strong> Suplementos Inmunológicos</p>
                       <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
@@ -1750,34 +1799,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="product-tabs-container">
-                  <nav class="product-tabs-nav">
-                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
-                    <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
-                  </nav>
-                  <div class="product-tab-content">
-                    <div class="product-tab-panel active" data-tab-content="descripcion">
-                      <h4>Escudo Protector Natural</h4>
-                      <ul>
-                        <li><strong>Infecciones Respiratorias y Gastrointestinales:</strong> Previene y ayuda a combatir
-                          infecciones comunes.</li>
-                        <li><strong>Soporte Oncológico:</strong> Brinda apoyo al sistema inmune durante tratamientos
-                          contra el cáncer.</li>
-                        <li><strong>Poblaciones Vulnerables:</strong> Perfecto para niños y personas
-                          inmunocomprometidas.</li>
-                        <li><strong>Recuperación y Rendimiento:</strong> Ayuda en la recuperación postoperatoria y
-                          mejora el rendimiento deportivo.</li>
-                      </ul>
-                      <p><strong>Presentación:</strong> Frasco con 60 cápsulas.</p>
-                    </div>
-                    <div class="product-tab-panel" data-tab-content="uso">
-                      <h4>Modo de Empleo</h4>
-                      <ul>
-                        <li>Tomar 2 cápsulas al día con un vaso de agua.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -1793,9 +1814,37 @@
                     <div class="product-title-container">
                       <h3>Inm <span class="pink-part">Mix</span></h3>
                     </div>
-                    <p class="product-description">Deliciosa y nutritiva proteína de origen vegetal, elaborada con
-                      ingredientes 100% naturales para darte energía, mejorar la digestión y ayudarte a reducir el
-                      apetito.</p>
+                    <div class="product-tabs-container">
+                      <nav class="product-tabs-nav">
+                        <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                        <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
+                      </nav>
+                      <div class="product-tab-content">
+                        <div class="product-tab-panel active" data-tab-content="descripcion">
+                          <h4>Nutrición Inteligente y Natural</h4>
+                          <ul>
+                            <li><strong>Control de Apetito:</strong> Ayuda a mejorar la digestión y a sentirte
+                              satisfecho
+                              por más tiempo.</li>
+                            <li><strong>100% Vegetal:</strong> Apta para personas alérgicas o intolerantes a la lactosa.
+                            </li>
+                            <li><strong>Salud Metabólica:</strong> Contribuye a regular los niveles de glucosa y
+                              colesterol.
+                            </li>
+                            <li><strong>Rendimiento Superior:</strong> Cada frasco te rinde 50 porciones nutritivas.
+                            </li>
+                          </ul>
+                          <p><strong>Presentación:</strong> Bote con 1000g.</p>
+                        </div>
+                        <div class="product-tab-panel" data-tab-content="uso">
+                          <h4>Preparación Sencilla</h4>
+                          <ul>
+                            <li>Mezclar una porción (20g) en 250ml de agua, leche vegetal o tu batido favorito.</li>
+                            <li>Ideal como desayuno, cena ligera o snack post-entrenamiento.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product-meta">
                       <p><strong>Categoría:</strong> Nutrición</p>
                       <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
@@ -1835,34 +1884,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="product-tabs-container">
-                  <nav class="product-tabs-nav">
-                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
-                    <button class="product-tab-btn" data-tab="uso">Modo de Uso</button>
-                  </nav>
-                  <div class="product-tab-content">
-                    <div class="product-tab-panel active" data-tab-content="descripcion">
-                      <h4>Nutrición Inteligente y Natural</h4>
-                      <ul>
-                        <li><strong>Control de Apetito:</strong> Ayuda a mejorar la digestión y a sentirte satisfecho
-                          por más tiempo.</li>
-                        <li><strong>100% Vegetal:</strong> Apta para personas alérgicas o intolerantes a la lactosa.
-                        </li>
-                        <li><strong>Salud Metabólica:</strong> Contribuye a regular los niveles de glucosa y colesterol.
-                        </li>
-                        <li><strong>Rendimiento Superior:</strong> Cada frasco te rinde 50 porciones nutritivas.</li>
-                      </ul>
-                      <p><strong>Presentación:</strong> Bote con 1000g.</p>
-                    </div>
-                    <div class="product-tab-panel" data-tab-content="uso">
-                      <h4>Preparación Sencilla</h4>
-                      <ul>
-                        <li>Mezclar una porción (20g) en 250ml de agua, leche vegetal o tu batido favorito.</li>
-                        <li>Ideal como desayuno, cena ligera o snack post-entrenamiento.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -1878,9 +1899,30 @@
                     <div class="product-title-container">
                       <h3>Inm <span class="pink-part">Box</span></h3>
                     </div>
-                    <p class="product-description">El kit definitivo para un blindaje inmunológico, cardiovascular y
-                      digestivo. Un tratamiento integral de 30 días diseñado para una máxima conveniencia y eficacia.
-                    </p>
+                    <div class="product-tabs-container">
+                      <nav class="product-tabs-nav">
+                        <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
+                      </nav>
+                      <div class="product-tab-content">
+                        <div class="product-tab-panel active" data-tab-content="descripcion">
+                          <h4>Fortaleza 360°</h4>
+                          <ul>
+                            <li><strong>Sinergia Total:</strong> Fortalece el funcionamiento de los sistemas
+                              inmunológico,
+                              cardiovascular y digestivo de forma simultánea.</li>
+                            <li><strong>Potenciador de Tratamientos:</strong> Intensifica los efectos positivos de los
+                              tratamientos médicos convencionales.</li>
+                            <li><strong>Fácil de Usar:</strong> Diseñado para facilitar su consumo diario con sobres y
+                              cápsulas organizadas.</li>
+                            <li><strong>Calidad Certificada:</strong> Elaborado bajo los más altos estándares de la
+                              Secretaría de Salud y Cofepris.</li>
+                          </ul>
+                          <p><strong>Presentación:</strong> 30 sobres de vitaminas y probióticos, 1 frasco con 30
+                            cápsulas
+                            de aceite de krill, 1 frasco con 30 cápsulas de lactoferrina y vitamina C.</p>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product-meta">
                       <p><strong>Categoría:</strong> Salud Integral</p>
                       <p><strong>Disponibilidad:</strong> <span style="color: #28a745; font-weight: 600;"><i
@@ -1920,28 +1962,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="product-tabs-container">
-                  <nav class="product-tabs-nav">
-                    <button class="product-tab-btn active" data-tab="descripcion">Descripción</button>
-                  </nav>
-                  <div class="product-tab-content">
-                    <div class="product-tab-panel active" data-tab-content="descripcion">
-                      <h4>Fortaleza 360°</h4>
-                      <ul>
-                        <li><strong>Sinergia Total:</strong> Fortalece el funcionamiento de los sistemas inmunológico,
-                          cardiovascular y digestivo de forma simultánea.</li>
-                        <li><strong>Potenciador de Tratamientos:</strong> Intensifica los efectos positivos de los
-                          tratamientos médicos convencionales.</li>
-                        <li><strong>Fácil de Usar:</strong> Diseñado para facilitar su consumo diario con sobres y
-                          cápsulas organizadas.</li>
-                        <li><strong>Calidad Certificada:</strong> Elaborado bajo los más altos estándares de la
-                          Secretaría de Salud y Cofepris.</li>
-                      </ul>
-                      <p><strong>Presentación:</strong> 30 sobres de vitaminas y probióticos, 1 frasco con 30 cápsulas
-                        de aceite de krill, 1 frasco con 30 cápsulas de lactoferrina y vitamina C.</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -1963,7 +1983,7 @@
       style="position: absolute; top: -5px; left: 0; width: 100%; height: 10px; background: linear-gradient(90deg, #056afa, #fff2df, #ffcffa, #417ecd); opacity: 0.8;">
     </div>
     <div
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTQ0MCAxNDQwIiB4bWxucz0iaHR0cDovL3d3dy5wMy5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0tMTAgLTEwIGwxNSAxNSBNLTIwIDAgeDE0NDogTTAgLTIwICAwIDE0NDAiIHN0cm9rZT0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjA1KSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9zdmc+'); background-size: 30px 30px; opacity: 0.2;">
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTQ0MCAxNDQwIiB4bWxucz0iaHR0cDovL3d3dy5wMy5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0tMTAgLTAwIGwxNSAxNSBNLTIwIDAgMDAgLTEwIC0xMCAxNDQwIiBzdHJva2U9InJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wNSkiIHN0cm9rZS13aWR0aD0iMSIvPjwvYXdnPg=='); background-size: 30px 30px; opacity: 0.2;">
     </div>
     <div
       style="position: absolute; top: -100px; right: -100px; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle, rgba(98, 200, 243, 0.2) 0%, rgba(98, 200, 243, 0) 70%);">
@@ -2044,7 +2064,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Particle JS
+    // JavaScript para Partículas
     function getRandom(min, max) {
       return Math.random() * (max - min) + min;
     }
@@ -2103,25 +2123,14 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
-      const particlesContainer = document.getElementById('bg-particles');
-      const particleCount = 30;
-      const particleTypes = ['immuneCellBlue', 'immuneCellPink', 'smallOrb'];
-      for (let i = 0; i < particleCount; i++) {
-        const randomType = particleTypes[Math.floor(Math.random() * particleTypes.length)];
-        const particle = createParticle(randomType);
-        particlesContainer.appendChild(particle);
-      }
-
       const carousel = document.getElementById('productCarousel');
       const carouselInstance = new bootstrap.Carousel(carousel);
 
-      // Function to handle tab and FAQ logic for a given slide
-      function initializeSlide(slideElement) {
-        const tabButtons = slideElement.querySelectorAll('.product-tab-btn');
-        const tabPanels = slideElement.querySelectorAll('.product-tab-panel');
-        const faqItems = slideElement.querySelectorAll('.faq-item');
+      // JavaScript for tab functionality
+      document.querySelectorAll('.product-tabs-container').forEach(container => {
+        const tabButtons = container.querySelectorAll('.product-tab-btn');
+        const tabPanels = container.querySelectorAll('.product-tab-panel');
 
-        // Tab functionality
         tabButtons.forEach(button => {
           button.addEventListener('click', () => {
             const tabName = button.dataset.tab;
@@ -2139,27 +2148,42 @@
           });
         });
 
-        // FAQ functionality
-        faqItems.forEach(item => {
-          const question = item.querySelector('.faq-question');
-          question.addEventListener('click', () => {
-            const wasActive = item.classList.contains('active');
-            // Close all items in the same slide
-            faqItems.forEach(i => i.classList.remove('active'));
-            // Toggle the clicked item
-            if (!wasActive) {
-              item.classList.add('active');
-            }
-          });
-        });
-      }
-
-      // Initialize all slides at the beginning
-      document.querySelectorAll('.carousel-item').forEach(slide => {
-        initializeSlide(slide);
+        // Ensure the first tab is active by default on load for each product
+        const defaultActiveButton = container.querySelector('.product-tab-btn.active');
+        const defaultActivePanel = container.querySelector('.product-tab-panel.active');
+        if (!defaultActiveButton && tabButtons.length > 0) {
+          tabButtons[0].classList.add('active');
+          tabPanels[0].classList.add('active');
+        } else if (defaultActiveButton && !defaultActivePanel) {
+          // If a button is active but no panel, activate corresponding panel
+          const tabName = defaultActiveButton.dataset.tab;
+          const correspondingPanel = container.querySelector(`.product-tab-panel[data-tab-content="${tabName}"]`);
+          if (correspondingPanel) {
+            correspondingPanel.classList.add('active');
+          }
+        }
       });
 
-      // Back to Top button functionality
+
+      // JavaScript to handle the FAQ accordion
+      document.querySelectorAll('.faq-item').forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+          item.classList.toggle('active');
+        });
+      });
+
+      // Partículas background (from previous implementation)
+      const particlesContainer = document.getElementById('bg-particles');
+      const particleCount = 30;
+      const particleTypes = ['immuneCellBlue', 'immuneCellPink', 'smallOrb'];
+      for (let i = 0; i < particleCount; i++) {
+        const randomType = particleTypes[Math.floor(Math.random() * particleTypes.length)];
+        const particle = createParticle(randomType);
+        particlesContainer.appendChild(particle);
+      }
+
+      // Back to top button (from previous implementation)
       var backToTopButton = document.querySelector('.back-to-top');
       if (backToTopButton) {
         window.onscroll = function () {
